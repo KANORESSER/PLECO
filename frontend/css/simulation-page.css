@@ -1,0 +1,111 @@
+/* ===============================
+   Simulation Page
+================================= */
+
+.simulation-page {
+  padding-top: 120px;
+}
+
+/* ===== タイトルエリア ===== */
+
+.page-title {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.breadcrumb {
+  font-size: 14px;
+  color: #888;
+}
+
+.simulation-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* ===== フォーム全体カード ===== */
+
+.simulation-form {
+  max-width: 700px;
+  margin: 60px auto 120px;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* ===== 各フォーム ===== */
+
+.form-group {
+  margin-bottom: 25px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #222;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  background: #f9f9f9;
+  transition: all 0.2s ease;
+}
+
+.form-group select:focus {
+  outline: none;
+  border-color: #00beff;
+  background: #fff;
+}
+
+/* ===== 結果エリア ===== */
+
+.result-box {
+  margin: 40px 0;
+  padding: 30px;
+  background: linear-gradient(135deg, #00beff, #0099cc);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+}
+
+.result-box p {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.result-box h2 {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ===== ボタン ===== */
+
+.simulation-button {
+  text-align: center;
+}
+
+.simulation-button button {
+  padding: 14px 40px;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+  background: #00beff;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.simulation-button button:hover {
+  background: #0099cc;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}

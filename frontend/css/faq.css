@@ -1,0 +1,68 @@
+/* =========================
+   FAQ
+========================= */
+
+.faq {
+  padding: 120px 20px;
+  background: #ffffff;
+}
+
+.faq-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-header {
+  margin-bottom: 60px;
+}
+
+/* アイテム */
+
+.faq-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* 質問 */
+
+.faq-question {
+  width: 100%;
+  padding: 30px 0;
+  font-size: 18px;
+  background: none;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.faq-question span:first-child {
+  text-align: left;
+}
+
+.faq-question .icon {
+  font-size: 22px;
+  color: #00a6c4;
+  transition: transform 0.3s ease;
+}
+
+/* 回答 */
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+  padding-right: 20px;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding-bottom: 25px;
+}
+
+.faq-item.active .icon {
+  transform: rotate(45deg);
+}

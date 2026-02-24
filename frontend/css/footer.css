@@ -1,0 +1,78 @@
+.footer {
+  background: #0f2e3a;
+  color: #ffffff;
+  padding-top: 80px;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-logo {
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.footer-left p {
+  line-height: 1.8;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  opacity: 0.6;
+}
+
+.footer-contact {
+  display: flex;
+  align-items: center;
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.footer-btn:hover {
+  background: #ffffff;
+  color: #0f2e3a;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 12px;
+  opacity: 0.6;
+}

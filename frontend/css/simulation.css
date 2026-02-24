@@ -1,0 +1,78 @@
+/* ---------- simulation section ---------- */
+.simulation {
+  position: relative;
+  background: linear-gradient(
+    rgba(0, 190, 255, 0.85),
+    rgba(0, 160, 220, 0.85)
+  ),
+  url("../images/simulation-bg.jpg"); /* 背景画像あれば */
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+
+.simulation-overlay {
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.simulation-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.simulation .section-ja {
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+.simulation h2 {
+  font-size: 34px;
+  margin: 12px 0 18px;
+  font-weight: 700;
+}
+
+.simulation p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 28px;
+}
+
+.simulation-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 26px;
+  background: white;
+  color: #007aa4;
+  font-weight: 700;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.simulation-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+
+/* arrow */
+.simulation-button .arrow {
+  width: 16px;
+  height: 2px;
+  background: #007aa4;
+  position: relative;
+}
+
+.simulation-button .arrow::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -4px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #007aa4;
+  border-right: 2px solid #007aa4;
+  transform: rotate(45deg);
+}

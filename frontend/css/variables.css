@@ -1,0 +1,18 @@
+:root {
+  --color-main: #00beff;
+  --color-main-light: #dbf6ff;
+  --color-sub: #c6c8c9;
+  --color-deep: #0b3c5d;
+  --color-white-base: #f9f9f9;
+  --color-white-accent: #f0f0f0;
+
+  --color-bg: #ffffff;
+  --color-text: #222222;
+  --color-muted: #666666;
+
+  --radius-lg: 18px;
+  --shadow: 0 12px 30px rgba(0,0,0,0.10);
+  --shadow-soft: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+

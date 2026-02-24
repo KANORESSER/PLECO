@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>株式会社PLECO</title>
+  <link rel="icon" type="image/png" href="../images/ロゴ-グラデーション.png">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/simulation-page.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- header -->
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#">
+      <img src="../images/logo_companyname_flex_gradation.png" alt="株式会社PLECO" class="brand-logo">
+    </a>
+
+    <nav class="nav">
+      <a href="#about">会社紹介</a>
+      <a href="#strength">PLECOの強み</a>
+      <a href="#service">サービス内容</a>
+      <a href="#works">実績</a>
+      <a href="#opening-support">民泊開業サポート</a>
+      <a href="#how-it-works">ご利用の流れ</a>
+      <a href="#pricing">料金表</a>
+      <a href="#faq">よくあるご質問</a>
+      <a href="#news">お知らせ</a>
+    </nav>
+
+    <div class="header-cta">
+      <a class="btn btn-ghost" href="simulation.html">料金シミュレーション</a>
+      <a class="btn btn-main" href="#contact">お問い合わせ</a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="メニュー">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+
+  <!-- sp menu -->
+  <div class="sp-menu" id="spMenu">
+    <a href="#about">会社紹介</a>
+    <a href="#strength">PLECOの強み</a>
+    <a href="#service">サービス内容</a>
+    <a href="#works">実績</a>
+    <a href="#opening-support">民泊開業サポート</a>
+    <a href="#how-it-works">ご利用の流れ</a>
+    <a href="#pricing">料金表</a>
+    <a href="#faq">よくあるご質問</a>
+    <a href="#news">お知らせ</a>
+    <a href="#contact">お問い合わせ</a>
+  </div>
+</header>
+
+<!-- main -->
+<main>
+  <section class="page-title">
+    <h1>料金シミュレーション</h1>
+  </section>
+
+  <section class="simulation-form">
+
+    <div class="form-group">
+      <label>平米数</label>
+      <select id="area">
+        <option value="0">選択してください</option>
+        <option value="8000">～50㎡</option>
+        <option value="10000">50.1～60㎡</option>
+        <option value="12000">60.1～70㎡</option>
+        <option value="14000">70.1～80㎡</option>
+        <option value="16000">80.1～90㎡</option>
+        <option value="18000">90.1～100㎡</option>
+        <option value="20000">100.1㎡～</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label>リネン庫の有無</label>
+      <select id="linen">
+        <option value="0">選択してください</option>
+        <option value="0">なし</option>
+        <option value="2000">あり</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>お風呂、シャワールームの数</label>
+      <select id="bath">
+        <option value="0">選択してください</option>
+        <option value="8000">なし</option>
+        <option value="10000">1つ</option>
+        <option value="12000">2つ</option>
+        <option value="14000">3つ</option>
+        <option value="16000">4つ</option>
+        <option value="18000">5つ</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>トイレの数</label>
+      <select id="wc">
+        <option value="0">選択してください</option>
+        <option value="8000">なし</option>
+        <option value="10000">1つ</option>
+        <option value="12000">2つ</option>
+        <option value="14000">3つ</option>
+        <option value="16000">4つ</option>
+        <option value="18000">5つ</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>キッチンの数</label>
+      <select id="kitchen">
+        <option value="0">選択してください</option>
+        <option value="8000">なし</option>
+        <option value="10000">1つ</option>
+        <option value="12000">2つ</option>
+        <option value="14000">3つ</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>シングルリネンセット数</label>
+      <select id="single-linen">
+        <option value="0">選択してください</option>
+        <option value="8000">なし</option>
+        <option value="10000">1つ</option>
+        <option value="12000">2つ</option>
+        <option value="14000">3つ</option>
+        <option value="16000">4つ</option>
+        <option value="18000">5つ</option>
+        <option value="0">6つ</option>
+        <option value="8000">7つ</option>
+        <option value="10000">8つ</option>
+        <option value="12000">9つ</option>
+        <option value="14000">10つ</option>
+        <option value="16000">11つ</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>ダブルリネンセット数</label>
+      <select id="double-linen">
+        <option value="0">選択してください</option>
+        <option value="8000">なし</option>
+        <option value="10000">1つ</option>
+        <option value="12000">2つ</option>
+        <option value="14000">3つ</option>
+        <option value="16000">4つ</option>
+        <option value="18000">5つ</option>
+        <option value="0">6つ</option>
+        <option value="8000">7つ</option>
+        <option value="10000">8つ</option>
+        <option value="12000">9つ</option>
+        <option value="14000">10つ</option>
+        <option value="16000">11つ</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>クイーンリネンセット数</label>
+      <select id="queen-linen">
+        <option value="0">選択してください</option>
+        <option value="8000">なし</option>
+        <option value="10000">1つ</option>
+        <option value="12000">2つ</option>
+        <option value="14000">3つ</option>
+        <option value="16000">4つ</option>
+        <option value="18000">5つ</option>
+        <option value="0">6つ</option>
+        <option value="8000">7つ</option>
+        <option value="10000">8つ</option>
+        <option value="12000">9つ</option>
+        <option value="14000">10つ</option>
+        <option value="16000">11つ</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>タオルセット数</label>
+      <select id="towel">
+        <option value="0">選択してください</option>
+        <option value="8000">なし</option>
+        <option value="10000">1つ</option>
+        <option value="12000">2つ</option>
+        <option value="14000">3つ</option>
+        <option value="16000">4つ</option>
+        <option value="18000">5つ</option>
+        <option value="0">6つ</option>
+        <option value="8000">7つ</option>
+        <option value="10000">8つ</option>
+        <option value="12000">9つ</option>
+        <option value="14000">10つ</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>オプションサービス</label>
+      <select id="option-service">
+        <option value="0">選択してください</option>
+        <option value="0">なし</option>
+        <option value="2000">備品セット</option>
+      </select>
+    </div>
+
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-inner">
+
+    <div class="footer-left">
+      <h2 class="footer-logo">PLECO</h2>
+      <p>
+        世界有数の観光地・京都の<br>
+        民泊・ホテル清掃専門会社。
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Strengths</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">How it works</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <a href="#" class="footer-btn">お問い合わせはこちら</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 PLECO All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>

@@ -1,0 +1,94 @@
+/* =========================
+   Contact CTA Section
+========================= */
+
+.contact {
+  position: relative;
+  height: 420px;
+  background: url("../images/contact-bg.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 青グラデーションオーバーレイ */
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(34, 120, 160, 0.85),
+    rgba(80, 170, 200, 0.85)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-inner {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  max-width: 600px;
+  padding: 0 20px;
+}
+
+.contact-inner .section-ja {
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.contact-inner h2 {
+  font-size: 42px;
+  font-weight: 600;
+  margin: 10px 0 20px;
+  letter-spacing: 2px;
+}
+
+.contact-inner p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 30px;
+}
+
+/* ボタン */
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  padding: 12px 28px;
+  border: 2px solid #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+  background: #fff;
+  color: #2a7fa6;
+}
+
+/* 矢印 */
+.contact-button .arrow {
+  width: 18px;
+  height: 2px;
+  background: currentColor;
+  position: relative;
+}
+
+.contact-button .arrow::after {
+  content: "";
+  position: absolute;
+  right: -4px;
+  top: -3px;
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid currentColor;
+  border-right: 2px solid currentColor;
+  transform: rotate(45deg);
+}

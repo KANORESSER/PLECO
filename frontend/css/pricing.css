@@ -1,0 +1,80 @@
+/* =========================
+   Pricing
+========================= */
+
+.pricing {
+  padding: 120px 20px;
+  background: #f8fbfd;
+}
+
+.pricing-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* グリッド */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 60px;
+  margin-bottom: 80px;
+}
+
+/* ボックス */
+.price-box h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.note {
+  font-size: 13px;
+  color: #d33;
+  margin-bottom: 25px;
+}
+
+/* テーブル */
+
+.price-box table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.04);
+}
+
+.price-box th {
+  background: #aee5ec;
+  padding: 14px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.price-box td {
+  padding: 14px;
+  font-size: 14px;
+  border-top: 1px solid #eee;
+}
+
+.price-box tr:hover td {
+  background: #f4fcfe;
+}
+
+.sub-table {
+  margin-top: 30px;
+}
+
+/* 赤文字 */
+
+.red {
+  color: #d33;
+  font-weight: 500;
+}
+
+/* レスポンシブ */
+
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,52 @@
+.about {
+  height: 100vh;
+  background: 
+    linear-gradient(rgba(46, 116, 196, 0.2), rgba(46,116,196,0.2)),
+    url("/images/about.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.vertical-text {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  font-size: 100px;
+  font-weight: 400;
+  opacity: 0.6;
+  color: white;
+  z-index: 1;
+}
+
+.vertical-text span {
+  display: inline-block;
+}
+
+.vertical-text .top {
+  margin-bottom: 80px;  /* ← これが正解 */
+}
+
+
+.about-text {
+  position: relative;
+  z-index: 2;
+}
+
+.about-text h1 {
+  font-size: 48px;
+  letter-spacing: 2px;
+}
+
+.about-text p {
+  font-size: 16px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+  opacity: 0.9;
+}
