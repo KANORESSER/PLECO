@@ -1,25 +1,44 @@
 /* ---------- responsive ---------- */
-@media (max-width: 960px) {
-  .nav, .header-cta { display: none; }
-  .hamburger { display: inline-block; margin-left: auto; }
-  .sp-menu.is-open { display: block; }
-
-  .hero-inner {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  .sp-menu.is-open { 
+    width: 100%;
   }
-  .hero-title { font-size: 40px; }
-  .hero-card--big { min-height: 240px; }
+  
+  h1 {
+    font-size: 36px;
+  }
+  
+  .btn-lg {
+    padding: 14px 20px;
+    font-size: 18px;
+  }
+  .sp-only {
+    display: inline;
+  }
+
   .works-stats {
     flex-direction: column;
     gap: 30px;
   }
-
   .works-grid {
     grid-template-columns: 1fr;
   }
-
   .service-grid {
     grid-template-columns: 1fr;
+  }
+
+
+  /* About-page */
+  .company-row {
+    flex-direction: column;
+  }
+  .company-th,
+  .company-td {
+    width: 100%;
+    border-right: none;
+  }
+  .company-th::after {
+    width: 40%;
   }
 
 }

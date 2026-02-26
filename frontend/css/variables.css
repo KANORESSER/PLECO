@@ -1,6 +1,10 @@
 :root {
   --color-main: #00beff;
+  --color-main-rgb: rgba(0,190,255);
+  --color-main-hover: #0099cc; 
+  --color-blue: #2e74c4;
   --color-main-light: #dbf6ff;
+  --color-main-light2: #c1efff;
   --color-sub: #c6c8c9;
   --color-deep: #0b3c5d;
   --color-white-base: #f9f9f9;

@@ -4,15 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>株式会社PLECO</title>
-  <link rel="icon" type="image/png" href="../images/ロゴ-グラデーション.png">
+  <link rel="icon" type="image/png" href="../images/logo/ロゴ-グラデーション.png">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/overlay.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/strength.css">
   <link rel="stylesheet" href="css/service.css">
-  <link rel="stylesheet" href="css/works.css">
   <link rel="stylesheet" href="css/opening.css">
   <link rel="stylesheet" href="css/howitworks.css">
   <link rel="stylesheet" href="css/pricing.css">
@@ -21,25 +20,36 @@
   <link rel="stylesheet" href="css/simulation.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/strength.css">
   <link rel="stylesheet" href="css/responsive.css">
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+<!-- Overlay -->
+<section id="overlay">
+  <p class="overlay-text">
+    京都の民泊に、<br class="sp-only"><span class="sp-indent"></span>プロの清掃品質を。
+  </p>
+</section>
+
+<section id="main-content">
 <!-- header -->
 <header class="site-header">
   <div class="header-inner">
     <a class="brand" href="#">
-      <img src="../images/logo_companyname_flex_gradation.png" alt="株式会社PLECO" class="brand-logo">
+      <img src="../images/logo/PLECO-rogo.png" alt="株式会社PLECO" class="brand-logo">
+      <div class="brand-name-wrapper">
+        <div class="brand-name">株式会社PLECO</div>
+        <div class="brand-sub">プロに任せる高品質な清掃代行</div>
+      </div>
     </a>
 
     <nav class="nav">
       <a href="#about">会社紹介</a>
       <a href="#strength">PLECOの強み</a>
       <a href="#service">サービス内容</a>
-      <a href="#works">実績</a>
-      <a href="#opening-support">民泊開業サポート</a>
       <a href="#how-it-works">ご利用の流れ</a>
       <a href="#pricing">料金表</a>
       <a href="#faq">よくあるご質問</a>
@@ -48,7 +58,7 @@
 
     <div class="header-cta">
       <a class="btn btn-ghost" href="simulation.html">料金シミュレーション</a>
-      <a class="btn btn-main" href="#contact">お問い合わせ</a>
+      <a class="btn" href="#contact">お問い合わせ</a>
     </div>
 
     <button class="hamburger" id="hamburger" aria-label="メニュー">
@@ -61,38 +71,60 @@
     <a href="#about">会社紹介</a>
     <a href="#strength">PLECOの強み</a>
     <a href="#service">サービス内容</a>
-    <a href="#works">実績</a>
-    <a href="#opening-support">民泊開業サポート</a>
     <a href="#how-it-works">ご利用の流れ</a>
     <a href="#pricing">料金表</a>
     <a href="#faq">よくあるご質問</a>
     <a href="#news">お知らせ</a>
-    <a href="#contact">お問い合わせ</a>
   </div>
 </header>
 
 <!-- main -->
 <main>
   <!-- hero -->
-  <section class="hero">
+  <section class="hero grad-bgc">
     <div class="hero-inner">
 
       <div class="hero-left">
-        <p class="hero-eyebrow">Kyoto Minpaku Cleaning & Management</p>
-        <h1 class="hero-title">
-          京都の民泊に、<br>
-          プロの清掃品質を。
-        </h1>
-        <p class="hero-lead">
-          民泊清掃・運営代行をワンストップで。<br>
-          品質の安定と手間の削減で、運営を支えます。
-        </p>
-        <div class="hero-actions">
-          <a class="btn btn-main btn-lg" href="#contact">無料相談する</a>
-          <a class="btn btn-outline btn-lg" href="simulation.html">料金シミュレーション</a>
+        <div class="hero-left-content">
+          <p class="hero-eyebrow">Kyoto Minpaku Cleaning & Management</p>
+          <h1 class="hero-title">
+            京都の民泊に、<br>
+            プロの清掃品質を。
+          </h1>
+          <p class="hero-lead">
+            民泊清掃・運営代行をワンストップで。<br>
+            品質の安定と手間の削減で、<br class="sp-only">運営を支えます。
+          </p>
+
+          <div class="hero-stats">
+
+            <div class="hero-stat">
+              <p>
+                契約継続率<br>
+                <span class="value two" data-target="98">0</span>%
+              </p>
+            </div>
+            <div class="hero-stat">
+              <p>
+                清掃実績<br>
+                年間<span class="value four" data-target="3000">0</span>件超
+              </p>
+            </div>
+            <div class="hero-stat">
+              <p>
+                京都を中心に<br>
+                <span class="value three" data-target="100">0</span>物件以上の<br>
+                管理・清掃実績
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a class="btn btn-lg" href="#contact">無料相談する</a>
+            <a class="btn btn-ghost btn-lg" href="simulation.html">料金シミュレーション</a>
+          </div>
         </div>
       </div>
-
       <div class="hero-right">
         <div class="main-visual-slides">
           <img src="../images/hero/cleaning.jpg" alt="cleaning" class="main-visual-slide is-active">
@@ -104,8 +136,6 @@
       </div>
 
     </div>
-    <!-- 背景のゆるい曲線 -->
-    <div class="hero-swoosh" aria-hidden="true"></div>
   </section>
 
   <!-- about -->
@@ -125,81 +155,95 @@
         宿泊施設様の価値を高め、ゲストに選ばれ続ける環境づくりに貢献します。
       </p>
     </div>
+
+    <a class="btn btn-lg" href="about.html">会社紹介を見る</a>
   </section>
 
   <!-- strength -->
   <section id="strength" class="strength">
     <div class="strength-inner">
 
-      <div class="section-title">
-        <h2>Strengths</h2>
-        <span class="section-ja">PLECOの強み</span>
-      </div>
-      <a href="#" class="strength-more">強みをもっと見える</a>
+      <section class="section-header">
+        <div class="section-title">
+          <h2>Strengths</h2>
+          <span class="section-ja">PLECOの強み</span>
+        </div>
+        <div class="strength-more pc-only">
+          <span class="more-text">強みをもっと見る</span>
+          <a href="strengths.html" class="circle-btn">
+            <span class="arrow arrow-default">→</span>
+            <span class="arrow arrow-hover">→</span>
+          </a>
+        </div>
+      </section>
 
       <div class="strength-cards">
 
-        <div class="strength-card">
-          <span class="number">01</span>
-          <div class="strength-card-text">
-            <h3>信頼の実績</h3>
-            <p>
-              京都の民泊施設を中心に、
-              年間3,000件以上の清掃を安定的に提供しています。
-            </p>
+        <div class="strength-row top">
+          <div class="strength-card">
+            <div class="strength-card-text">
+              <h3>信頼の実績</h3>
+              <p>
+                京都の民泊施設を中心に、
+                年間3,000件以上の清掃を安定的に提供しています。
+              </p>
+            </div>
+            <div class="strength-img"><img src="../images/strengths/strength1.jpg" alt="強み1"></div>
+          </div>
+          <div class="strength-card">
+            <div class="strength-card-text">
+              <h3>京都発、<br>国内最高水準のクオリティ</h3>
+              <p>
+                数多くの民泊を知り尽くしたプロだからこそ実現できる、質の高い清掃サービス。
+              </p>
+            </div>
+            <div class="strength-img"><img src="../images/strengths/strength2.jpg" alt="強み2"></div>
+          </div>
+          <div class="strength-card">
+            <div class="strength-card-text">
+              <h3>厳密な<br>チェック・教育体制</h3>
+              <p>
+                厳密なチェック体制と教育体制で、<br>
+                ミスのない高品質清掃を徹底しています。
+              </p>
+            </div>
+            <div class="strength-img"><img src="../images/strengths/strength3.jpg" alt="強み3"></div>
+          </div>
+        </div>
+        <div class="strength-row bottom">
+          <div class="strength-card">
+            <div class="strength-card-text">
+              <h3>柔軟で迅速な対応力</h3>
+              <p>
+                経験豊富なスタッフとの柔軟かつスムーズな連携により、いつでも安心してご依頼いただけます。
+              </p>
+            </div>
+            <div class="strength-img"><img src="../images/strengths/strength4.jpg" alt="強み4"></div>
+          </div>
+          <div class="strength-card">
+            <div class="strength-card-text">
+              <h3>安心の管理体制</h3>
+              <p>
+                清掃だけでなく「施設の安心運営」もサポートします。
+              </p>
+            </div>
+            <div class="strength-img"><img src="../images/strengths/strength5.jpg" alt="強み5"></div>
           </div>
         </div>
 
-        <div class="strength-card">
-          <span class="number">02</span>
-          <div class="strength-card-text">
-            <h3>京都随一のクオリティ</h3>
-            <p>
-              京都の民泊を知り尽くしたプロだからこそ
-              実現できる、質の高い清掃サービス。
-            </p>
-          </div>
+        <div class="strength-more sp-only">
+          <span class="more-text">強みをもっと見る</span>
+          <a href="strengths.html" class="circle-btn">
+            <span class="arrow arrow-default">→</span>
+            <span class="arrow arrow-hover">→</span>
+          </a>
         </div>
-
-        <div class="strength-card">
-          <span class="number">03</span>
-          <div class="strength-card-text">
-            <h3>厳密なチェック体制と<br>教育体制</h3>
-            <p>
-              厳密なチェック体制と教育体制で、
-              ミスのない高品質清掃を徹底しています。
-            </p>
-          </div>
-        </div>
-
-        <div class="strength-card">
-          <span class="number">04</span>
-          <div class="strength-card-text">
-            <h3>柔軟で迅速な対応力</h3>
-            <p>
-              状況により、
-              いつでも安心してご依頼いただけます。
-            </p>
-          </div>
-        </div>
-
-        <div class="strength-card">
-          <span class="number">05</span>
-          <div class="strength-card-text">
-            <h3>施設運営サポート</h3>
-            <p>
-              清掃だけでなく、
-              「施設の安心運営」もサポートします。
-            </p>
-          </div>
-        </div>
-
       </div>
     </div>
   </section>
 
   <!-- Service -->
-  <section id="service" class="service">
+  <section id="service" class="service section">
     <div class="service-inner">
 
     <div class="section-header">
@@ -211,8 +255,14 @@
         京都の民泊・ホテル清掃に特化した専門サービス。
         清掃から運営サポートまで一貫対応します。
       </p>
-    </div>
-
+      <div class="service-more pc-only">
+        <span class="more-text">サービスをもっと見る</span>
+        <a href="service.html" class="circle-btn">
+          <span class="arrow arrow-default">→</span>
+          <span class="arrow arrow-hover">→</span>
+        </a>
+      </div>
+    </div>   
       <div class="service-cards">
 
         <div class="service-card">
@@ -256,143 +306,6 @@
         </div>
 
       </div>
-
-    </div>
-  </section>
-
-  <!-- Works -->
-  <section id="works" class="works">
-    <div class="works-inner">
-
-      <div class="section-header">
-        <div class="section-title">
-          <h2>Works</h2>
-          <span>実績</span>
-        </div>
-        <p>
-          京都エリアを中心に、多くの民泊・ホテル施設の
-          清掃・運営サポートを行っています。
-        </p>
-      </div>
-
-      <!-- 数字エリア -->
-      <div class="works-stats">
-        <div class="stat">
-          <h3>年間3,000件以上</h3>
-          <p>清掃対応実績</p>
-        </div>
-        <div class="stat">
-          <h3>京都市内中心</h3>
-          <p>対応エリア</p>
-        </div>
-        <div class="stat">
-          <h3>多数の継続契約</h3>
-          <p>オーナー様満足度</p>
-        </div>
-      </div>
-
-      <!-- 実例カード -->
-      <div class="works-grid">
-
-        <div class="work-card">
-          <div class="work-img"><img src="../images/higashiyama.jpg" alt="町家民泊"></div>
-          <div class="work-content">
-            <h3>町家民泊（東山区）</h3>
-            <p>
-              築年数のある物件を丁寧に管理。
-              レビュー評価向上に貢献。
-            </p>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-img"><img src="../images/designershotel.jpg" alt="デザイナーズホテル"></div>
-          <div class="work-content">
-            <h3>デザイナーズホテル（中京区）</h3>
-            <p>
-              高級感ある空間に合わせた
-              品質基準で対応。
-            </p>
-          </div>
-        </div>
-
-        <div class="work-card">
-          <div class="work-img"><img src="../images/ekichikajpg.jpg" alt="駅近アパート型民泊"></div>
-          <div class="work-content">
-            <h3>駅近アパート型民泊（下京区）</h3>
-            <p>
-              回転率の高い施設でも
-              安定した清掃品質を維持。
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Opening Support -->
-  <section id="opening-support" class="opening-support">
-    <div class="opening-inner">
-
-      <div class="section-header">
-        <div class="section-title">
-          <h2>Opening Support</h2>
-          <span>民泊開業サポート</span>
-        </div>
-        <p>
-          物件選びから運営開始後のサポートまで。
-          京都で民泊を始めたい方をトータルで支援します。
-        </p>
-      </div>
-
-      <div class="opening-grid">
-
-        <div class="opening-card">
-          <div class="opening-icon">01</div>
-          <h3>物件・エリア相談</h3>
-          <p>
-            京都エリアの特性を踏まえ、
-            収益性を意識した物件選びをサポート。
-          </p>
-        </div>
-
-        <div class="opening-card">
-          <div class="opening-icon">02</div>
-          <h3>申請・手続きサポート</h3>
-          <p>
-            必要な申請や手続きをわかりやすく案内。
-            スムーズな開業を支援します。
-          </p>
-        </div>
-
-        <div class="opening-card">
-          <div class="opening-icon">03</div>
-          <h3>インテリア・備品提案</h3>
-          <p>
-            ゲストに選ばれる空間づくりを
-            清掃目線からアドバイス。
-          </p>
-        </div>
-
-        <div class="opening-card">
-          <div class="opening-icon">04</div>
-          <h3>運営開始後サポート</h3>
-          <p>
-            清掃・設備チェック・緊急対応まで。
-            安心して運営できる体制を整えます。
-          </p>
-        </div>
-
-      </div>
-
-      <div class="opening-cta">
-        <a href="#" class="cta-button">
-          開業相談をする
-        </a>
-      </div>
-
     </div>
   </section>
 
@@ -516,7 +429,6 @@
 
     </div>
   </section>
-
 
   <!-- Pricing -->
   <section id="pricing" class="pricing">
@@ -647,7 +559,7 @@
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="faq">
+  <section id="faq" class="faq section">
     <div class="faq-inner">
 
       <div class="section-title">
@@ -657,8 +569,9 @@
 
       <div class="faq-item">
         <button class="faq-question">
-          <span>お支払い方法は？</span>
-          <span class="icon">＋</span>
+          <span class="faq-label">Q</span>
+          <span class="faq-text">お支払い方法は？</span>
+          <span class="icon"></span>
         </button>
         <div class="faq-answer">
           お支払いは銀行振込にてお願いしております。
@@ -667,8 +580,9 @@
 
       <div class="faq-item">
         <button class="faq-question">
-          <span>パジャマや着物の洗濯はお願いできますか？</span>
-          <span class="icon">＋</span>
+          <span class="faq-label">Q</span>
+          <span class="faq-text">パジャマや着物の洗濯はお願いできますか？</span>
+          <span class="icon"></span>
         </button>
         <div class="faq-answer">
           リネン・タオル以外のクリーニングは承っておりません。
@@ -677,8 +591,20 @@
 
       <div class="faq-item">
         <button class="faq-question">
-          <span>前日の清掃依頼に追加料金はかかりますか？</span>
-          <span class="icon">＋</span>
+          <span class="faq-label">Q</span>
+          <span class="faq-text">ごみの回収、運搬をお願いできますか？</span>
+          <span class="icon"></span>
+        </button>
+        <div class="faq-answer">
+          弊社では回収、運搬は承っておりません。施設のごみ箱へのごみ捨ては行っております。
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span class="faq-label">Q</span>
+          <span class="faq-text">前日の清掃依頼に追加料金はかかりますか？</span>
+          <span class="icon"></span>
         </button>
         <div class="faq-answer">
           前日・当日のご依頼に追加料金はかかりません。
@@ -690,7 +616,7 @@
   </section>
 
   <!-- news  -->
-  <section id="news" class="news">
+  <section id="news" class="news section">
     <div class="news-inner">
 
       <div class="section-title">
@@ -767,7 +693,7 @@
           概算料金をご確認いただけます。
         </p>
 
-        <a href="/simulation.html" class="simulation-button">
+        <a href="simulation.html" class="simulation-button">
           シミュレーションする
           <span class="arrow"></span>
         </a>
@@ -812,13 +738,15 @@
 
     <div class="footer-links">
       <ul>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Strengths</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">How it works</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#strength">Strengths</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#how-it-works">How it works</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#faq">Q & A</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#simulation-cta">Simulation</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
 
@@ -832,6 +760,7 @@
     <p>© 2025 PLECO All Rights Reserved.</p>
   </div>
 </footer>
+</section>
 
-<script src="script.js"></script>
+<script src="./js/script.js"></script>
 </body>

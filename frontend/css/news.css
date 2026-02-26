@@ -3,8 +3,8 @@
 ====================== */
 
 .news {
-  padding: 120px 20px;
-  background: #f7f9fb;
+  background: var(--color-white-base);
+  scroll-margin-top: 80px;
 }
 
 .news-inner {

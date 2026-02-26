@@ -2,9 +2,11 @@
    Pricing
 ========================= */
 
+
 .pricing {
-  padding: 120px 20px;
-  background: #f8fbfd;
+  scroll-margin-top: 80px;
+  background: var(--color-white-base);
+  padding-top: 80px;
 }
 
 .pricing-inner {

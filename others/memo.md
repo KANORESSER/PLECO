@@ -36,6 +36,8 @@ https://takazen-e.jp/
 アニメーション、色合い、レイアウト
 https://www.yahagijisyo.co.jp/
 
+リニューアル最終デザインイメージ？
+https://pleco-web.com/sub/
 
 
 ベースは白で余白を多く落ち着きと信頼感のあるデザインを意識

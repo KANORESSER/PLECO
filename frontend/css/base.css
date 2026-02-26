@@ -1,35 +1,72 @@
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
+*, *::before, *::after { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-
 html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
-
 body {
   background-color: var(--color-white-base);
   color: var(--color-deep);
   font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
-
+.grad-bgc {
+  background:
+    radial-gradient(
+      circle at -50% 20%,
+      #00beff2e 0%,
+      #00beff1a 20%,
+      rgba(0,190,255,0.15) 40%,
+      var(--color-white-base) 80%
+    );
+}
 .container {
   max-width: 1100px;
   margin: 0 auto;
   /* scroll-margin-top: 110px; */
   padding: 100px 20px;
 }
-
-
-h1, h2 {
+h1, h2, h3 {
   font-family: "Noto Serif JP", serif;
   font-weight: 300;
 }
+/* デフォルト（PC）では改行しない */
+.sp-only, .sp-indent {
+  display: none;
+}
 
+/* button */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  border-radius: 999px;
+  padding: 10px 16px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.25s;
+  border: 1px solid transparent;
+  cursor: pointer;
+  box-shadow: var(--shadow-soft);
+  background: var(--color-main);
+  color: white;
+}
+.btn:hover { transform: translateY(-3px); opacity: 0.7; }
+.btn-lg { padding: 18px 28px; font-size: 22px; }
+.btn-ghost {
+  background: rgba(0,190,255,0.1);
+  color: #007aa4;
+  border-color: rgba(0,190,255,0.25);
+}
+.btn-ghost:hover { background: rgba(0,190,255,0.3); }
 
+.section {
+  height: calc(100vh - 80px);
+  padding: 40px 0;
+  scroll-margin-top: 120px;
+}
 .section-header {
   display: flex;
   justify-content: space-between;
@@ -53,7 +90,7 @@ h1, h2 {
 .section-title span {
   font-size: 14px;
   letter-spacing: 2px;
-  color: #2e74c4;
+  color: var(--color-blue);
 }
 .section-header p {
   max-width: 600px;
@@ -61,4 +98,42 @@ h1, h2 {
   line-height: 1.8;
   color: #555;
   max-width: 480px;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+.page-header {
+  margin-top: 80px;
+  position: relative;
+  background: linear-gradient(
+    rgba(0, 190, 255, 0.7),
+    rgba(0, 160, 220, 0.7)
+  ),
+  url("../../images/Kyoto-header.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+}
+.page-header-overlay {
+  padding: 90px 20px;
+  text-align: center;
+  align-items: center;
+}
+.page-header-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.page-header .section-ja {
+  font-size: 13px;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+.page-header h1 {
+  font-size: 34px;
+  margin: 12px 0 18px;
+  font-weight: 700;
 }
