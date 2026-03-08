@@ -7,32 +7,37 @@
   <link rel="icon" type="image/png" href="../images/logo/ロゴ-グラデーション.png">
   <link rel="stylesheet" href="css/variables.css">
   <link rel="stylesheet" href="css/base.css">
-  <link rel="stylesheet" href="css/overlay.css">
+  <!-- <link rel="stylesheet" href="css/overlay.css"> -->
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/hero.css">
   <link rel="stylesheet" href="css/about.css">
-  <link rel="stylesheet" href="css/service.css">
+  <link rel="stylesheet" href="css/flow.css">
   <link rel="stylesheet" href="css/opening.css">
-  <link rel="stylesheet" href="css/howitworks.css">
-  <link rel="stylesheet" href="css/pricing.css">
+  <link rel="stylesheet" href="css/works.css">
   <link rel="stylesheet" href="css/faq.css">
   <link rel="stylesheet" href="css/news.css">
   <link rel="stylesheet" href="css/simulation.css">
   <link rel="stylesheet" href="css/contact.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/strength.css">
+  <link rel="stylesheet" href="css/recruit.css">
   <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/service-overview.css">
+  <link rel="stylesheet" href="css/startup-support.css">
+  <link rel="stylesheet" href="css/management.css">
+  <link rel="stylesheet" href="css/price.css">
+
   <!-- font -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <!-- Overlay -->
-<section id="overlay">
+<!-- <section id="overlay">
   <p class="overlay-text">
-    京都の民泊に、<br class="sp-only"><span class="sp-indent"></span>プロの清掃品質を。
+    民泊運営をトータルサポート
   </p>
-</section>
+</section> -->
 
 <section id="main-content">
 <!-- header -->
@@ -42,22 +47,22 @@
       <img src="../images/logo/PLECO-rogo.png" alt="株式会社PLECO" class="brand-logo">
       <div class="brand-name-wrapper">
         <div class="brand-name">株式会社PLECO</div>
-        <div class="brand-sub">プロに任せる高品質な清掃代行</div>
+        <div class="brand-sub">民泊運営をトータルサポート</div>
       </div>
     </a>
 
     <nav class="nav">
       <a href="#about">会社紹介</a>
-      <a href="#strength">PLECOの強み</a>
-      <a href="#service">サービス内容</a>
-      <a href="#how-it-works">ご利用の流れ</a>
-      <a href="#pricing">料金表</a>
-      <a href="#faq">よくあるご質問</a>
+      <a href="#service-overview">サービス</a>
+      <a href="#startup-support">民泊開業支援</a>
+      <a href="#management">民泊運営代行</a>
+      <a href="#price">料金プラン</a>
+      <a href="#works">実績</a>
       <a href="#news">お知らせ</a>
     </nav>
 
     <div class="header-cta">
-      <a class="btn btn-ghost" href="simulation.html">料金シミュレーション</a>
+      <a class="btn btn-ghost" href="price.html">料金プラン</a>
       <a class="btn" href="#contact">お問い合わせ</a>
     </div>
 
@@ -69,11 +74,13 @@
   <!-- sp menu -->
   <div class="sp-menu" id="spMenu">
     <a href="#about">会社紹介</a>
-    <a href="#strength">PLECOの強み</a>
-    <a href="#service">サービス内容</a>
-    <a href="#how-it-works">ご利用の流れ</a>
-    <a href="#pricing">料金表</a>
+    <a href="#service-overview">サービス</a>
+    <a href="#startup-support">民泊開業支援</a>
+    <a href="#management">民泊運営代行</a>
+    <a href="#price">料金表</a>
+    <a href="#works">実績</a>
     <a href="#faq">よくあるご質問</a>
+    <a href="#recruit">採用情報</a>
     <a href="#news">お知らせ</a>
   </div>
 </header>
@@ -86,14 +93,13 @@
 
       <div class="hero-left">
         <div class="hero-left-content">
-          <p class="hero-eyebrow">Kyoto Minpaku Cleaning & Management</p>
+          <p class="hero-eyebrow">Minpaku Management & Cleaning</p>
           <h1 class="hero-title">
-            京都の民泊に、<br>
-            プロの清掃品質を。
+            民泊運営をトータルサポート
           </h1>
           <p class="hero-lead">
-            民泊清掃・運営代行をワンストップで。<br>
-            品質の安定と手間の削減で、<br class="sp-only">運営を支えます。
+            京都を中心に関西エリアの民泊運営・清掃をワンストップで。<br>
+            品質の安定と手間の削減で、運営を支えます。
           </p>
 
           <div class="hero-stats">
@@ -106,7 +112,7 @@
             </div>
             <div class="hero-stat">
               <p>
-                清掃実績<br>
+                実績<br>
                 年間<span class="value four" data-target="3000">0</span>件超
               </p>
             </div>
@@ -121,7 +127,7 @@
 
           <div class="hero-actions">
             <a class="btn btn-lg" href="#contact">無料相談する</a>
-            <a class="btn btn-ghost btn-lg" href="simulation.html">料金シミュレーション</a>
+            <a class="btn btn-ghost btn-lg" href="simulation.html">料金プラン</a>
           </div>
         </div>
       </div>
@@ -145,471 +151,645 @@
     </div>
 
     <div class="about-text">
-      <h1>
-        京都という特別な場所での滞在を、<br>
-        より特別なものにするために。
+      <h1 class="fade-up">
+        京都の民泊・宿泊施設において、<br>
+        運営管理から現場品質までを支えます。
       </h1>
-      <p>
-        世界有数の観光地・京都の民泊・ホテル清掃を専門とする清掃会社です。<br>
-        京都随一の清掃クオリティと誠実な対応を通じて、<br>
-        宿泊施設様の価値を高め、ゲストに選ばれ続ける環境づくりに貢献します。
+      <p class="fade-up">
+        世界有数の観光地・京都において、民泊・宿泊施設の運営サポートを行っています。<br>
+        運営管理、現場オペレーション、清掃品質までを一貫して整えることで、<br>
+        オーナー様とゲストの双方にとって安心できる宿泊環境を実現します。
       </p>
     </div>
 
-    <a class="btn btn-lg" href="about.html">会社紹介を見る</a>
+    <!-- <a class="btn btn-lg fade-up" href="about.html">会社紹介を見る</a> -->
   </section>
 
-  <!-- strength -->
-  <section id="strength" class="strength">
-    <div class="strength-inner">
+  <!-- service -->
+  <section id="service-overview" class="service-overview overlap-section">
+    <div class="container">
 
-      <section class="section-header">
+      <div class="section-header fade-up">
         <div class="section-title">
-          <h2>Strengths</h2>
-          <span class="section-ja">PLECOの強み</span>
-        </div>
-        <div class="strength-more pc-only">
-          <span class="more-text">強みをもっと見る</span>
-          <a href="strengths.html" class="circle-btn">
-            <span class="arrow arrow-default">→</span>
-            <span class="arrow arrow-hover">→</span>
-          </a>
-        </div>
-      </section>
-
-      <div class="strength-cards">
-
-        <div class="strength-row top">
-          <div class="strength-card">
-            <div class="strength-card-text">
-              <h3>信頼の実績</h3>
-              <p>
-                京都の民泊施設を中心に、
-                年間3,000件以上の清掃を安定的に提供しています。
-              </p>
-            </div>
-            <div class="strength-img"><img src="../images/strengths/strength1.jpg" alt="強み1"></div>
-          </div>
-          <div class="strength-card">
-            <div class="strength-card-text">
-              <h3>京都発、<br>国内最高水準のクオリティ</h3>
-              <p>
-                数多くの民泊を知り尽くしたプロだからこそ実現できる、質の高い清掃サービス。
-              </p>
-            </div>
-            <div class="strength-img"><img src="../images/strengths/strength2.jpg" alt="強み2"></div>
-          </div>
-          <div class="strength-card">
-            <div class="strength-card-text">
-              <h3>厳密な<br>チェック・教育体制</h3>
-              <p>
-                厳密なチェック体制と教育体制で、<br>
-                ミスのない高品質清掃を徹底しています。
-              </p>
-            </div>
-            <div class="strength-img"><img src="../images/strengths/strength3.jpg" alt="強み3"></div>
-          </div>
-        </div>
-        <div class="strength-row bottom">
-          <div class="strength-card">
-            <div class="strength-card-text">
-              <h3>柔軟で迅速な対応力</h3>
-              <p>
-                経験豊富なスタッフとの柔軟かつスムーズな連携により、いつでも安心してご依頼いただけます。
-              </p>
-            </div>
-            <div class="strength-img"><img src="../images/strengths/strength4.jpg" alt="強み4"></div>
-          </div>
-          <div class="strength-card">
-            <div class="strength-card-text">
-              <h3>安心の管理体制</h3>
-              <p>
-                清掃だけでなく「施設の安心運営」もサポートします。
-              </p>
-            </div>
-            <div class="strength-img"><img src="../images/strengths/strength5.jpg" alt="強み5"></div>
-          </div>
-        </div>
-
-        <div class="strength-more sp-only">
-          <span class="more-text">強みをもっと見る</span>
-          <a href="strengths.html" class="circle-btn">
-            <span class="arrow arrow-default">→</span>
-            <span class="arrow arrow-hover">→</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Service -->
-  <section id="service" class="service section">
-    <div class="service-inner">
-
-    <div class="section-header">
-      <div class="section-title">
-        <h2>Service</h2>
-        <span>サービス内容</span>
-      </div>
-      <p>
-        京都の民泊・ホテル清掃に特化した専門サービス。
-        清掃から運営サポートまで一貫対応します。
-      </p>
-      <div class="service-more pc-only">
-        <span class="more-text">サービスをもっと見る</span>
-        <a href="service.html" class="circle-btn">
-          <span class="arrow arrow-default">→</span>
-          <span class="arrow arrow-hover">→</span>
-        </a>
-      </div>
-    </div>   
-      <div class="service-cards">
-
-        <div class="service-card">
-          <h3>チェックアウト清掃</h3>
-          <p>
-            ゲスト退去後の室内清掃を徹底実施。
-            次の滞在に向けて、最高の状態へ整えます。
-          </p>
-        </div>
-
-        <div class="service-card">
-          <h3>リネン交換</h3>
-          <p>
-            ベッドメイク、タオル・アメニティの補充まで対応。
-            清潔で快適な空間を維持します。
-          </p>
-        </div>
-
-        <div class="service-card">
-          <h3>水回り徹底清掃</h3>
-          <p>
-            キッチン・浴室・トイレなど、
-            ゲスト満足度に直結する箇所を重点清掃。
-          </p>
-        </div>
-
-        <div class="service-card">
-          <h3>設備チェック</h3>
-          <p>
-            家電・設備の動作確認や異常報告まで実施。
-            トラブルを未然に防ぎます。
-          </p>
-        </div>
-
-        <div class="service-card">
-          <h3>オプション対応</h3>
-          <p>
-            アメニティ補充・緊急対応など、
-            施設運営を支える柔軟なサポート。
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- How it works -->
-  <section id="how-it-works" class="how-it-works">
-    <div class="how-inner">
-
-      <div class="section-header">
-        <div class="section-title">
-          <h2>How it works</h2>
-          <span>ご利用の流れ</span>
+          <span>SERVICE</span>
+          <h2>PLECOのサービス</h2>
         </div>
         <p>
-          お問い合わせからご契約までの流れと、
-          清掃サービス実施の流れをご紹介します。
+          PLECOでは、民泊の<strong>開業支援</strong>から
+          <strong>運営管理</strong>まで、ワンストップでサポートしています。
         </p>
       </div>
 
-      <!-- 契約までの流れ -->
-      <div class="flow-block">
-        <h3 class="flow-title">契約までの流れ</h3>
-
-        <div class="flow-grid">
-
-          <div class="flow-card">
-            <span class="step">STEP 01</span>
-            <h4>料金シミュレーション<br>お問い合わせ</h4>
-            <p>
-              ご依頼内容が決まり次第、
-              お問い合わせフォームよりご連絡ください。
-            </p>
+      <div class="service-overview-cards fade-up">
+        <!-- ① 民泊開業支援 -->
+        <article class="service-overview-card service-overview-card-startup">
+          <div class="service-overview-card-head">
+            <h3>民泊開業支援</h3>
           </div>
 
-          <div class="flow-card">
-            <span class="step">STEP 02</span>
-            <h4>内覧日程調整</h4>
-            <p>
-              メールまたはZoomにて
-              内覧日程を調整いたします。
-            </p>
+          <div class="service-overview-card-content">
+            <div class="service-overview-card-text">
+              <p >
+                物件調査、事業計画、必要な工事、各種申請など、
+                民泊を始めるために必要な準備をサポートします。
+              </p>
+              <div class="more">
+                <span class="more-text">詳しくはこちら</span>
+                <a href="startup-support.html" class="circle-btn">
+                  <span class="arrow arrow-default">→</span>
+                  <span class="arrow arrow-hover">→</span>
+                </a>
+              </div>
+            </div>
+
+            <img src="../images/service-overview1.png" alt="民泊開業支援イメージ画像">
           </div>
 
-          <div class="flow-card">
-            <span class="step">STEP 03</span>
-            <h4>お見積りご連絡</h4>
-            <p>
-              内覧後2〜3営業日以内に
-              お見積書をお送りします。
-            </p>
+        </article>
+
+        <!-- ② 民泊運営代行 -->
+        <article class="service-overview-card service-overview-card-operation">
+          <div class="service-overview-card-head">
+            <h3>民泊運営代行</h3>
           </div>
 
-          <div class="flow-card">
-            <span class="step">STEP 04</span>
-            <h4>ご契約・ご利用開始</h4>
-            <p>
-              ご契約後、最短翌営業日より
-              サービス開始可能です。
-            </p>
+          <div class="service-overview-card-content">
+            <div class="service-overview-card-text">
+              <p>
+                予約サイト管理、ゲスト対応、レビュー管理、清掃調整など、開業後の運営を継続的にサポートします。
+              </p>
+              <div class="more">
+                <span class="more-text">詳しくはこちら</span>
+                <a href="management.html" class="circle-btn">
+                  <span class="arrow arrow-default">→</span>
+                  <span class="arrow arrow-hover">→</span>
+                </a>
+              </div>
+            </div>
+            <img src="../images/service-overview2.png" alt="民泊運営代行イメージ画像">
           </div>
-
-        </div>
-      </div>
-
-
-      <!-- 清掃サービスの流れ -->
-      <div class="flow-block">
-        <h3 class="flow-title">清掃サービスの流れ</h3>
-
-        <div class="flow-grid">
-
-          <div class="flow-card">
-            <span class="step">STEP 01</span>
-            <h4>スタッフ現地到着</h4>
-            <p>ゲスト退去確認後、室内へ入室します。</p>
-          </div>
-
-          <div class="flow-card">
-            <span class="step">STEP 02</span>
-            <h4>清掃サービス実施</h4>
-            <p>
-              清掃と同時に施設の
-              不具合チェックも行います。
-            </p>
-          </div>
-
-          <div class="flow-card">
-            <span class="step">STEP 03</span>
-            <h4>撮影・社内確認</h4>
-            <p>
-              清掃後に写真撮影。
-              社内オペレーターが最終確認します。
-            </p>
-          </div>
-
-          <div class="flow-card">
-            <span class="step">STEP 04</span>
-            <h4>ダブルチェック</h4>
-            <p>
-              熟練スタッフによる
-              抜き打ちチェックを実施。
-            </p>
-          </div>
-
-          <div class="flow-card">
-            <span class="step">STEP 05</span>
-            <h4>報告書送付</h4>
-            <p>
-              在庫状況・連絡事項を
-              オーナー様へ共有します。
-            </p>
-          </div>
-
-          <div class="flow-card">
-            <span class="step">STEP 06</span>
-            <h4>清掃完了</h4>
-            <p>次回のご利用をお待ちしております。</p>
-          </div>
-
-        </div>
+        </article>
       </div>
 
     </div>
   </section>
 
-  <!-- Pricing -->
-  <section id="pricing" class="pricing">
-    <div class="pricing-inner">
+  <!-- startup-support -->
+  <section  id="startup-support" class="startup-support under-section">
 
-      <div class="section-title">
-        <h2>Pricing</h2>
-        <span>料金表</span>
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <div class="section-title">
+          <span>STARTUP SUPPORT</span>
+          <h2>民泊開業支援</h2>
+        </div>
+        <p>
+          <strong>物件選定から申請手続き、開業準備</strong>まで民泊開業をトータルサポートします。
+        </p>
       </div>
 
-      <!-- 上段 2カラム -->
-      <div class="pricing-grid">
+      <!-- startup-recommend -->
+      <section class="startup-recommend">
+        <h3 class="underline-h3 fade-up">こんな方におすすめ</h3>
+        <div class="recommend-container fade-up">
 
-        <!-- 民泊 -->
-        <div class="price-box">
-          <h3>民泊清掃の基本料金</h3>
-          <p class="note">※リネン費用は含まれておりません。</p>
+          <div class="recommend-item">
+            <img src="../images/startup-support/startup-recommend1.png" alt="民泊を始めたい イメージ画像">
+            <h4>民泊を始めたい</h4>
+            <p>手続きの流れや準備方法がわからず、開業までの進め方に不安がある方</p>
+          </div>
+          <div class="recommend-item">
+            <img src="../images/startup-support/startup-recommend2.png" alt="物件が民泊に向くか知りたい イメージ画像">
+            <h4>物件が民泊に向くか知りたい</h4>
+            <p>所有物件や検討中の物件が民泊として運営可能か確認したい方</p>
+          </div>
+          <div class="recommend-item">
+            <img src="../images/startup-support/startup-recommend3.png" alt="申請手続きが難しい イメージ画像">
+            <h4>申請手続きが難しい</h4>
+            <p>旅館業・民泊新法などの行政申請を専門家に任せたい方</p>
+          </div>
 
-          <table>
-            <thead>
-              <tr>
-                <th>広さ（㎡）</th>
-                <th>料金（税抜）</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>〜50㎡</td><td>3,000円〜6,500円</td></tr>
-              <tr><td>50.1〜60㎡</td><td>7,000円</td></tr>
-              <tr><td>60.1〜70㎡</td><td>7,500円</td></tr>
-              <tr><td>70.1〜80㎡</td><td>8,000円</td></tr>
-              <tr><td>80.1〜90㎡</td><td>8,500円</td></tr>
-              <tr><td>90.1〜100㎡</td><td>9,000円</td></tr>
-              <tr><td>100㎡以上</td><td>9,500円〜</td></tr>
-            </tbody>
-          </table>
+        </div>
+      </section>
+
+      <!-- startup-flow -->
+      <section class="startup-flow">
+
+        <h3 class="underline-h3 fade-up">開業サポート内容</h3>
+        
+        <div class="startup-flow-grid fade-up">
+
+          <div class="startup-flow-card card1">
+            <div class="startup-flow-icon">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+                <!-- 屋根 -->
+                <path d="M20 55 L60 25 L100 55"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+                <!-- 家の本体 -->
+                <rect x="30" y="55"
+                      width="60"
+                      height="40"
+                      rx="4"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+                <!-- ドア -->
+                <rect x="55" y="70"
+                      width="10"
+                      height="25"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+              </svg>
+            </div>
+            <span class="startup-flow-step">1</span>
+            <h4>物件調査</h4>
+            <p>
+              物件の立地や条件を確認し、<br>
+              民泊として運営可能か調査します。
+            </p>
+          </div>
+
+          <div class="startup-flow-card card2">
+            <div class="startup-flow-icon">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+                <!-- 書類 -->
+                <rect x="28" y="24" width="56" height="72" rx="6"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+
+                <!-- グラフ線 -->
+                <path d="M40 74 L52 62 L64 68 L76 48"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+
+                <!-- 点 -->
+                <circle cx="40" cy="74" r="2.5" fill="var(--color-main)"/>
+                <circle cx="52" cy="62" r="2.5" fill="var(--color-main)"/>
+                <circle cx="64" cy="68" r="2.5" fill="var(--color-main)"/>
+                <circle cx="76" cy="48" r="2.5" fill="var(--color-main)"/>
+
+                <!-- 下線 -->
+                <line x1="40" y1="84" x2="72" y2="84"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+
+              </svg>
+            </div>
+            <span class="startup-flow-step">2</span>
+            <h4>計画作成</h4>
+            <p>
+              収支計画や運営方針を整理し、<br>
+              開業までのスケジュールを作成します。
+            </p>
+          </div>
+
+          <div class="startup-flow-card card3">
+            <div class="startup-flow-icon">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+                <!-- 書類 -->
+                <rect x="30" y="22" width="54" height="74" rx="6"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+
+                <!-- 文字ライン -->
+                <line x1="42" y1="40" x2="72" y2="40"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+                <line x1="42" y1="52" x2="68" y2="52"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+
+                <!-- チェック丸 -->
+                <circle cx="76" cy="76" r="16"
+                        stroke="var(--color-main)"
+                        stroke-width="3"
+                        fill="none"/>
+
+                <!-- チェック -->
+                <path d="M68 76 L74 82 L84 70"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+
+              </svg>
+            </div>
+            <span class="startup-flow-step">3</span>
+            <h4>行政申請</h4>
+            <p>
+              旅館業許可や民泊新法など、<br>
+              必要な申請手続きをサポートします。
+            </p>
+          </div>
+
+          <div class="startup-flow-card card4">
+            <div class="startup-flow-icon">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+                <!-- ランプ -->
+                <path d="M70 28 L82 28 L76 42 Z"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linejoin="round"/>
+                <line x1="76" y1="42" x2="76" y2="54"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+
+                <!-- テーブル -->
+                <rect x="52" y="54" width="36" height="8" rx="3"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+                <line x1="58" y1="62" x2="58" y2="88"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+                <line x1="82" y1="62" x2="82" y2="88"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+
+                <!-- 椅子 -->
+                <rect x="28" y="58" width="18" height="16" rx="2"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+                <line x1="30" y1="74" x2="30" y2="90"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+                <line x1="44" y1="74" x2="44" y2="90"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+
+              </svg>
+            </div>
+            <span class="startup-flow-step">4</span>
+            <h4>開業準備</h4>
+            <p>
+              家具・備品準備や写真撮影、<br>
+              予約サイト登録などを行います。
+            </p>
+          </div>
+
+          <div class="startup-flow-card card5">
+            <div class="startup-flow-icon">
+              <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+
+                <!-- 家 -->
+                <path d="M22 50 L50 28 L78 50"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"/>
+                <rect x="30" y="50" width="40" height="30" rx="4"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+
+                <!-- ドア -->
+                <rect x="46" y="62" width="8" height="18"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+
+                <!-- OPEN看板 -->
+                <line x1="80" y1="34" x2="96" y2="48"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+                <rect x="76" y="48" width="26" height="18" rx="3"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      fill="none"/>
+
+                <!-- 看板の文字線 -->
+                <line x1="82" y1="57" x2="96" y2="57"
+                      stroke="var(--color-main)"
+                      stroke-width="3"
+                      stroke-linecap="round"/>
+
+              </svg>
+            </div>
+            <span class="startup-flow-step">5</span>
+            <h4>運営開始</h4>
+            <p>
+              予約受付を開始し、<br>
+              民泊運営がスタートします。
+            </p>
+          </div>
+
         </div>
 
-        <!-- ホテル -->
-        <div class="price-box">
-          <h3>ホテル清掃の基本料金</h3>
-          <p class="note">※リネン費用は含まれておりません。</p>
+      </section>
 
-          <table>
-            <thead>
-              <tr>
-                <th>部屋タイプ</th>
-                <th>料金（税抜）</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>シングルルーム</td><td>2,000円〜</td></tr>
-              <tr><td>ダブルルーム</td><td>2,200円〜</td></tr>
-              <tr><td>ツインルーム</td><td>2,300円〜</td></tr>
-              <tr><td>トリプルルーム</td><td>2,500円〜</td></tr>
-              <tr><td>共用部分</td><td>1,500円〜</td></tr>
-              <tr><td>その他</td><td class="red">別途お見積り</td></tr>
-            </tbody>
-          </table>
+      <!-- CTA -->
+      <section class="startup-cta">
+        <div class="section-title fade-up">
+          <h2>民泊開業のご相談はこちら</h2>
+          <span>
+             京都で民泊を始めたい方はお気軽にご相談ください。 
+          </span>
         </div>
+        <a href="#" class="btn btn-lg fade-up">
+          無料相談はこちら
+        </a>
+      </section>
 
+      <!-- more-tile -->
+      <section class="more-tile-wrapper fade-up">
+        <a class="more-tile" href="startup-support.html">
+          <img src="../images/designershotel.jpg" alt="民泊開業支援画像">
+          <span class="more-tile-title">民泊開業支援</span>
+          <span class="more-tile-subtitle">詳しくはこちら</span>
+          <span class="more-tile-arrow">→</span>
+        </a>
+      </section>
+
+    </div>
+
+  </section>
+
+  <!-- management -->
+  <section  id="management" class="management overlap-section">
+
+    <div class="container">
+
+      <div class="section-header fade-up">
+        <div class="section-title">
+          <span>MANAGEMENT SERVICE</span>
+          <h2>民泊運営代行</h2>
+        </div>
+        <p>
+          <strong>宿泊予約サイトの運営、ゲスト対応、清掃・メンテナンス</strong>まで、民泊施設の運営をトータルサポートします。
+        </p>
       </div>
 
-      <!-- 下段 -->
-      <div class="pricing-grid lower">
+      <!-- 許可取得済みの方 -->
+      <section class="licensed-flow">
+        <h3 class="underline-h3 fade-up">旅館業の許可取得済みの方</h3>
+        <div class="licensed-flow-container fade-up">
 
-        <!-- 追加料金 -->
-        <div class="price-box">
-          <h3>追加料金</h3>
-          <table>
-            <thead>
-              <tr>
-                <th>内容</th>
-                <th>料金（税抜）</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>前日キャンセル</td><td>基本料金の50%</td></tr>
-              <tr><td>当日キャンセル</td><td>基本料金の100%</td></tr>
-              <tr><td>緊急駆け付け</td><td>3,000円／回</td></tr>
-              <tr><td>年末年始・GW</td><td>清掃価格の1.5倍</td></tr>
-              <tr>
-                <td>交通費・リネン運搬費</td>
-                <td class="red">別途ご請求となる場合があります</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="licensed-flow-image">
+            <img src="../images/management/licensed.png" alt="旅館業の許可取得済みの方 イメージ画像">
+          </div>
+
+          <div class="licensed-flow-step">
+            <span>1</span>
+            <h4>契約準備</h4>
+            <p>サービス内容のご説明・ヒアリングを行い、契約条件を整理いたします。</p>
+          </div>
+
+          <div class="licensed-flow-step">
+            <span>2</span>
+            <h4>物件視察</h4>
+            <p>現地確認を行い、運営開始に向けた改善点を洗い出します。</p>
+          </div>
+
+          <div class="licensed-flow-step">
+            <span class="step-number">3</span>
+            <h4>契約・開業準備</h4>
+            <p>管理契約締結後、運営体制の整備を行います。</p>
+          </div>
+
+          <div class="licensed-flow-step">
+            <span class="step-number">4</span>
+            <h4>営業開始</h4>
+            <p>予約管理・価格調整・メッセージ対応を開始します。</p>
+          </div>
+
+          <div class="licensed-flow-step">
+            <span class="step-number">5</span>
+            <h4>収益獲得</h4>
+            <p>データ分析を行いながら、収益最大化を図ります。</p>
+          </div>
+
         </div>
+      </section>
 
-        <!-- オプション -->
-        <div class="price-box">
-          <h3>オプションサービス</h3>
+      <!-- 新規に旅館業の許可を取得される方 -->
+      <section class="opening-flow">
+        <h3 class="underline-h3 fade-up">新規に旅館業の許可を取得される方</h3>
+        <div class="opening-flow-container fade-up">
 
-          <table>
-            <thead>
-              <tr>
-                <th>リネンサプライ</th>
-                <th>料金（税抜）</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>シングル</td><td>600円</td></tr>
-              <tr><td>ダブル</td><td>700円</td></tr>
-              <tr><td>クイーン</td><td>800円</td></tr>
-              <tr>
-                <td>キング</td>
-                <td>サイズ確認後お見積り</td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="opening-flow-image">
+            <img src="../images/management/opening.png" alt="新規に旅館業の許可を取得される方 イメージ画像">
+          </div>
 
-          <table class="sub-table">
-            <thead>
-              <tr>
-                <th>その他</th>
-                <th>料金（税抜）</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td>タオルセット</td><td>200円／人</td></tr>
-              <tr><td>備品セット</td><td>800円／回</td></tr>
-            </tbody>
-          </table>
+          <div class="opening-flow-step">
+            <span>1</span>
+            <h4>物件調査</h4>
+            <p>物件の立地・条件を確認し、民泊運営の可否を判断します。</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>2</span>
+            <h4>事業計画作成</h4>
+            <p>収支計画・改修計画を整理し、開業までの方針を明確にします。</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>3</span>
+            <h4>ご契約</h4>
+            <p>サポート内容をご確認いただき、開業準備を進めます</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>4</span>
+            <h4>物件工事・準備</h4>
+            <p>必要な改修工事や設備準備を行います。</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>5</span>
+            <h4>旅館業申請</h4>
+            <p>行政協議・申請手続きを進めます。</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>6</span>
+            <h4>開業準備</h4>
+            <p>家具・備品準備、撮影、ページ作成などを行います。</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>7</span>
+            <h4>運営チェック</h4>
+            <p>開業前の確認やシミュレーションを行い、課題を調整します。</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>8</span>
+            <h4>集客開始</h4>
+            <p>予約サイト公開などを行い、募集を開始します。</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>9</span>
+            <h4>運営開始</h4>
+            <p>宿泊施設としての運営をスタートします。</p>
+          </div>
+
+          <div class="opening-flow-step">
+            <span>10</span>
+            <h4>運営サポート</h4>
+            <p>開業後も安定運営に向けて継続的に支援します。</p>
+          </div>
         </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="startup-cta fade-up">
+        <div class="section-title">
+          <h2>民泊運営代行のご相談はこちら</h2>
+          <span>
+            京都で民泊運営をご検討の方は、お気軽にご相談ください。
+          </span>
+        </div>
+        <a href="#" class="btn btn-lg fade-up">
+          無料相談はこちら
+        </a>
+      </section>
+
+      <!-- more-tile -->
+      <section class="more-tile-wrapper fade-up">
+        <a class="more-tile" href="management.html">
+          <img src="../images/designershotel.jpg" alt="民泊開業支援画像">
+          <span class="more-tile-title">民泊運営代行</span>
+          <span class="more-tile-subtitle">詳しくはこちら</span>
+          <span class="more-tile-arrow">→</span>
+        </a>
+      </section>
+
+    </div>
+
+  </section>
+
+  <!-- price -->
+  <section id="price" class="price under-section">
+    <div class="container">
+
+      <div class="section-header">
+        <div class="section-title">
+          <span>PRICE</span>
+          <h2>料金プラン</h2>
+        </div>
+      </div>
+
+      <div class="price-container">
+        <h3>
+          運営サポートは大きく分けると2つのコースがあります。
+        </h3>
+
+        <div class="price-cards">
+          <!-- 運営代行プラン -->
+          <article class="price-card price-card-startup">
+            <div class="price-card-head">
+              <h4>オーナー運営プラン</h4>
+            </div>
+
+            <div class="price-card-content">
+              <div class="price-card-text">
+                <p>
+                  オーナー様⾃⾝が所有する物件を宿泊施設に⽤途変更をして、その運営を当社がサポートするプランです。<br>
+                  サポートは運営の⼀部、或いは、すべてを丸投げできるプランをご⽤意しております。
+                </p>
+              </div>
+
+              <img src="../images/price-card1.png" alt="運営代行プランイメージ画像">
+            </div>
+          </article>
+
+          <!-- 賃貸プラン -->
+          <article class="price-card price-card-operation">
+            <div class="price-card-head">
+              <h4>賃貸運営プラン</h4>
+            </div>
+
+            <div class="price-card-content">
+              <div class="price-card-text">
+                <p>
+                  賃貸プランは通常の賃貸物件のように当社がオーナー様から物件を賃貸して、宿泊施設を運営するプランです。<br>
+                  ⼀般的な住居⽤としての賃貸の家賃単価より⾼い家賃設定をさせていただきます。
+                </p>
+              </div>
+
+              <img src="../images/price-card2.png" alt="賃貸プランイメージ画像">
+            </div>
+          </article>
+        </div>  
+
+        <a href="price.html" class="price-plan-btn btn btn-lg">
+          料金プランを見る
+        </a>
 
       </div>
 
     </div>
   </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="faq section">
-    <div class="faq-inner">
 
-      <div class="section-title">
-        <h2>Q & A</h2>
-        <span>よくあるご質問</span>
+  <!-- ===== Works / 実績紹介 ===== -->
+  <section id="works" class="works overlap-section">
+    <div class="works-inner">
+
+      <div class="section-title fade-up">
+        <h2>Works</h2>
+        <span>実績紹介</span>
       </div>
 
-      <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-label">Q</span>
-          <span class="faq-text">お支払い方法は？</span>
-          <span class="icon"></span>
-        </button>
-        <div class="faq-answer">
-          お支払いは銀行振込にてお願いしております。
-        </div>
-      </div>
+      <div class="works-grid">
+        <!-- item 01 -->
+        <article class="work-card">
+          <figure class="work-figure">
+            <img src="../images/higashiyama.jpg" alt="活用例01 京都市東山区／京町家">
+          </figure>
+          <div class="work-body">
+            <h3 class="work-place">京都市東山区／京町家</h3>
+            <p class="work-service">清掃＋運営管理</p>
+          </div>
+        </article>
 
-      <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-label">Q</span>
-          <span class="faq-text">パジャマや着物の洗濯はお願いできますか？</span>
-          <span class="icon"></span>
-        </button>
-        <div class="faq-answer">
-          リネン・タオル以外のクリーニングは承っておりません。
-        </div>
-      </div>
+        <!-- item 02 -->
+        <article class="work-card">
+          <figure class="work-figure">
+            <img src="../images/designershotel.jpg" alt="活用例02 左京区／デザイナーズ物件">
+          </figure>
+          <div class="work-body">
+            <h3 class="work-place">左京区／デザイナーズ物件</h3>
+            <p class="work-service">清掃＋予約管理</p>
+          </div>
+        </article>
 
-      <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-label">Q</span>
-          <span class="faq-text">ごみの回収、運搬をお願いできますか？</span>
-          <span class="icon"></span>
-        </button>
-        <div class="faq-answer">
-          弊社では回収、運搬は承っておりません。施設のごみ箱へのごみ捨ては行っております。
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          <span class="faq-label">Q</span>
-          <span class="faq-text">前日の清掃依頼に追加料金はかかりますか？</span>
-          <span class="icon"></span>
-        </button>
-        <div class="faq-answer">
-          前日・当日のご依頼に追加料金はかかりません。
-          ただしスケジュールにより対応できない場合がございます。
-        </div>
+        <!-- item 03 -->
+        <article class="work-card">
+          <figure class="work-figure">
+            <img src="../images/ekichikajpg.jpg" alt="活用例03 下京区／マンション型">
+          </figure>
+          <div class="work-body">
+            <h3 class="work-place">下京区／マンション型</h3>
+            <p class="work-service">清掃のみ対応</p>
+          </div>
+        </article>
       </div>
 
     </div>
@@ -619,15 +799,21 @@
   <section id="news" class="news section">
     <div class="news-inner">
 
-      <div class="section-title">
-        <div>
+      <section class="section-header fade-up">
+        <div class="section-title">
           <h2>News</h2>
-          <span>お知らせ</span>
+          <span class="section-ja">お知らせ</span>
         </div>
-        <a href="#" class="more-link">詳しくはこちら →</a>
-      </div>
+        <div class="news-more pc-only">
+          <span class="more-text">詳しくはこちら</span>
+          <a href="news.html" class="circle-btn">
+            <span class="arrow arrow-default">→</span>
+            <span class="arrow arrow-hover">→</span>
+          </a>
+        </div>
+      </section>
 
-      <div class="news-wrapper">
+      <div class="news-wrapper fade-up">
 
         <!-- カテゴリ -->
         <div class="news-category">
@@ -682,38 +868,18 @@
     </div>
   </section>
 
-  <!-- Simulation -->
-  <section id="simulation-cta" class="simulation">
-    <div class="simulation-overlay">
-      <div class="simulation-inner">
-        <span class="section-ja">料金シミュレーション</span>
-        <h2>Simulation</h2>
-        <p>
-          物件条件を入力するだけで<br>
-          概算料金をご確認いただけます。
-        </p>
-
-        <a href="simulation.html" class="simulation-button">
-          シミュレーションする
-          <span class="arrow"></span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-
   <!-- Contact -->
   <section id="contact" class="contact">
     <div class="contact-overlay">
       <div class="contact-inner">
-        <span class="section-ja">お問い合わせ</span>
-        <h2>Contact</h2>
-        <p>
+        <span class="section-ja fade-up">お問い合わせ</span>
+        <h2 class="fade-up">Contact</h2>
+        <p class="fade-up">
           サービス内容や料金、導入のご相談など<br>
           お気軽にお問い合わせください。
         </p>
 
-        <a href="/contact.html" class="contact-button">
+        <a href="/contact.html" class="contact-button fade-up">
           詳しくはこちら
           <span class="arrow"></span>
         </a>
@@ -738,15 +904,14 @@
 
     <div class="footer-links">
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#strength">Strengths</a></li>
-        <li><a href="#service">Service</a></li>
-        <li><a href="#how-it-works">How it works</a></li>
-        <li><a href="#pricing">Pricing</a></li>
-        <li><a href="#faq">Q & A</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#simulation-cta">Simulation</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#service-overview">SERVICE</a></li>
+        <li><a href="#service">STARTUP SUPPORT</a></li>
+        <li><a href="#how-it-works">MANAGEMENT</a></li>
+        <li><a href="#price">PRICE</a></li>
+        <li><a href="#works">WORKS</a></li>
+        <li><a href="#news">NEWS</a></li>
+        <li><a href="#contact">CONTACT</a></li>
       </ul>
     </div>
 

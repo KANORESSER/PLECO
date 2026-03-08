@@ -1,0 +1,99 @@
+.flow {
+  scroll-margin-top:80px;
+}
+
+
+.flow-inner {
+  background:
+    radial-gradient(circle at 30% 90%, rgba(0,190,255,0.3), transparent 40%),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0,190,255,0.2), transparent 65%),
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.8), transparent 60%),
+    var(--color-main-light);
+  margin-top: -120px;
+  margin-bottom: -120px;
+  padding: 80px 120px;
+  width: 100%;
+  border-radius: 80px;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08), 
+  0 -10px 30px rgba(0,0,0,0.04);
+  position: relative;
+  z-index: 10;
+}
+
+.flow .section-header {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+  justify-content: flex-start;
+}
+
+
+/* ブロック */
+.flow-block {
+  margin-bottom: 100px;
+}
+.flow-title {
+  font-size: 22px;
+  margin-bottom: 50px;
+  position: relative;
+  padding-left: 20px;
+}
+.flow-title::before {
+  content: "";
+  width: 4px;
+  height: 100%;
+  background: #00a6c4;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* グリッド */
+
+.flow-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 40px;
+}
+
+/* カード */
+.flow-card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 32px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+.flow-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+/* STEP */
+
+.step {
+  font-size: 13px;
+  color: #00a6c4;
+  letter-spacing: 1px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+}
+
+/* 見出し */
+
+.flow-card h4 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* 説明 */
+
+.flow-card p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.8;
+}

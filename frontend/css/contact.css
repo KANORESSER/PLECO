@@ -5,7 +5,7 @@
 .contact {
   position: relative;
   height: 420px;
-  background: url("../images/contact-bg.jpg") center/cover no-repeat;
+  background: url("../../images/contact.png") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,38 +57,37 @@
 .contact-button {
   display: inline-flex;
   align-items: center;
-  gap: 15px;
-  padding: 12px 28px;
-  border: 2px solid #fff;
-  border-radius: 40px;
+  gap: 8px;
+  padding: 14px 26px;
+  background: white;
+  color: #007aa4;
+  font-weight: 700;
+  border-radius: 999px;
   text-decoration: none;
-  color: #fff;
-  font-size: 14px;
-  letter-spacing: 1px;
-  transition: all 0.3s ease;
+  transition: 0.3s;
 }
 
 .contact-button:hover {
-  background: #fff;
-  color: #2a7fa6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
 
-/* 矢印 */
+/* arrow */
 .contact-button .arrow {
-  width: 18px;
+  width: 16px;
   height: 2px;
-  background: currentColor;
+  background: #007aa4;
   position: relative;
 }
 
 .contact-button .arrow::after {
   content: "";
   position: absolute;
-  right: -4px;
-  top: -3px;
+  right: 0;
+  top: -4px;
   width: 8px;
   height: 8px;
-  border-top: 2px solid currentColor;
-  border-right: 2px solid currentColor;
+  border-top: 2px solid #007aa4;
+  border-right: 2px solid #007aa4;
   transform: rotate(45deg);
 }

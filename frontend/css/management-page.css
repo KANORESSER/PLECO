@@ -1,0 +1,378 @@
+.hero {
+  height:calc(100vh + 5rem);
+  background:
+    radial-gradient(circle at 30% 90%, rgba(0,190,255,0.3), transparent 40%),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8), transparent 80%),
+    radial-gradient(circle at 80% 30%, rgba(0,190,255,0.2), transparent 20%),
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.8), transparent 80%),
+    var(--color-main-light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 8rem;
+}
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+.hero-text p {
+  font-size: 1.2rem;
+}
+.hero-features {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 8rem;
+}
+.feature {
+  position: relative;
+  text-align: center;
+}
+.feature::before {
+  content: "";
+  position: absolute;
+  width:36rem;
+  height: 36rem;
+  background-image: url("../../images/logo/ロゴ-グラデーション.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+.feature span {
+  font-size: 2.6rem;
+  color: var(--color-main);
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.2em;
+}
+.feature p {
+  font-size: 1.6rem;
+  color: var(--color-deep);
+  margin: 0;
+  font-weight: 500;
+}
+
+
+
+
+/* cta */
+.final-cta {
+  padding: 10rem 0;
+  background:
+    linear-gradient(rgba(0,120,170,0.4), rgba(0,120,170,0.4)),
+    url("../../images/contact.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+.final-cta-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.final-cta h2 {
+  color: white;
+  margin-bottom: 2em;
+}
+.final-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.final-cta-buttons a {
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ===== Flow Layout ===== */
+.flow-hero-content {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+.flow-hero-image {
+  flex: 1;
+  display: flex;
+}
+.flow-hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.flow-hero-list {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.flow-item {
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.flow-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-right: auto;
+}
+.flow-item {
+  gap: 2rem;
+}
+.flow-circle {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.flow-arrow {
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.flow-item:hover .flow-circle {
+  background: var(--color-main);
+}
+.flow-item:hover .flow-arrow {
+  color: white;
+  transform: translateX(2px);
+}
+.flow-item:hover {
+  opacity: 0.6;
+}
+.flow-number {
+  color: var(--color-main);
+  font-size: 1.8rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flow-label {
+  font-size: 1.8rem;
+  color: var(--color-muted);
+}
+
+
+.flow-step-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+.step-image img {
+  width: 100%;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.step-title {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.step-title span {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-main); 
+}
+.step-title h3 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-deep);
+  margin: 0;
+}
+.step-text p {
+  line-height: 1.4;
+  margin-bottom: 0.5em;
+}
+
+
+/* step3 */
+.step-cards {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+}
+.step-card {
+  border-radius: 1rem;
+  width: 70%;
+  padding: 2rem;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.04);
+  background: var(--color-white-base);
+}
+.step-card-content {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+/* テキスト */
+.step-card-text h3 {
+  font-size: 32px;
+  font-family: var(--font-sans);
+  color: var(--color-deep);
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+.step-card-text p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #555;
+}
+.step-card-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+.step-card-arrow {
+  width: 0;
+  height: 0;
+  margin: 0.2rem auto;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--color-main);
+}
+
+
+
+/* strength */
+.strength-container{
+  background:rgba(255,255,255,0.6);
+  border-radius:2rem;
+  padding: 3rem 3rem;
+  box-shadow:0 30px 60px rgba(0,0,0,0.08);
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap: 3rem;
+}
+.strength-item{
+  background:#fff;
+  border-radius:2rem;
+  padding:2rem 2rem;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  text-align:center;
+}
+.strength-item svg{
+  width:10rem;
+  height:10rem;
+  display:block;
+}
+.strength-item svg *{
+  stroke-width:3.5;
+}
+.strength-item h4{
+  font-weight: 600;
+}
+.strength-item p{
+  line-height:1.7;
+}
+
+
+
+
+
+
+/* final-cta */
+.flow-final-cta {
+  padding: 140px 0;
+  background:
+    linear-gradient(rgba(0,120,170,0.4), rgba(0,120,170,0.4)),
+    url("../../images/contact.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+
+.final-cta-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+
+.final-cta-header .cta-sub {
+  font-size: 14px;
+  letter-spacing: 2px;
+  opacity: 0.8;
+}
+
+.final-cta-header h2 {
+  font-size: 36px;
+  margin: 20px 0;
+  font-weight: 600;
+}
+
+.final-cta-header p {
+  font-size: 16px;
+  opacity: 0.9;
+  line-height: 1.8;
+}
+
+/* カード */
+.final-cta-buttons {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.final-cta-card {
+  background: white;
+  color: var(--color-deep);
+  padding: 50px;
+  border-radius: 24px;
+  text-decoration: none;
+  transition: 0.3s;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.final-cta-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.final-cta-card h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--color-blue);
+}
+
+.final-cta-card p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.cta-link {
+  font-weight: 600;
+  color: var(--color-main);
+}

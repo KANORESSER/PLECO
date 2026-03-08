@@ -44,6 +44,22 @@ setTimeout(() => {
   }, 4000);
 }, 4000);
 
+// Fade Up
+const targets = document.querySelectorAll('.fade-up');
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-visible');
+      // observer.unobserve(entry.target); // 1回だけにしたい場合
+    }
+  });
+}, {
+  threshold: 0.2
+});
+targets.forEach(target => {
+  observer.observe(target);
+});
+
 
 // FAQメニュー開閉
 document.querySelectorAll(".faq-question").forEach(button => {

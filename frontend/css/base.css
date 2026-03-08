@@ -4,11 +4,12 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-size: 16px;
 }
 body {
   background-color: var(--color-white-base);
   color: var(--color-deep);
-  font-family: "Noto Sans JP", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: var(--font-sans);
 }
 .grad-bgc {
   background:
@@ -21,19 +22,125 @@ body {
     );
 }
 .container {
-  max-width: 1100px;
+  max-width: 1400px;
   margin: 0 auto;
-  /* scroll-margin-top: 110px; */
-  padding: 100px 20px;
 }
-h1, h2, h3 {
+h1, h2, h3, h4 {
   font-family: "Noto Serif JP", serif;
   font-weight: 300;
+  margin: 0;
+}
+h1 {
+  font-size: 2.896rem;
+}
+h2 {
+  font-size: 2.488rem;
+}
+h3 {
+  font-size: 2.074rem;
+}
+h4 {
+  font-size: 1.728rem;
+  font-weight: 600;
+}
+p {
+  font-size: 1.1rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+.underline-h3{
+  margin-bottom: 0.8em;
+  display:block;
+  width:fit-content;
+  position:relative;
+}
+.underline-h3::before{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:0.1em;
+  width:100%;
+  height: 0.3em;
+  background:linear-gradient(90deg,#00beff,#2e74c4);
+  opacity: 0.4;
+  z-index: -1;
 }
 /* デフォルト（PC）では改行しない */
 .sp-only, .sp-indent {
   display: none;
 }
+
+/* .overlap-section */
+.overlap-section {
+  background: var(--color-white-base);
+  margin-top: -5rem;
+  margin-bottom: -5rem;
+  padding: 5rem 10rem;
+  width: 100%;
+  border-radius: 5rem;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.08), 
+  0 -10px 30px rgba(0,0,0,0.04);
+  position: relative;
+  z-index: 10;
+  scroll-margin-top: 5rem;
+}
+/* .under-section */
+.under-section {
+  background:
+    radial-gradient(circle at 30% 90%, rgba(0,190,255,0.3), transparent 40%),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0,190,255,0.2), transparent 65%),
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.8), transparent 60%),
+    var(--color-main-light);
+  margin-top: -5rem;
+  margin-bottom: -5rem;
+  padding: 10rem 10rem;
+  width: 100%;
+}
+
+/* section header/title */
+.section-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+}
+.section-title span {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-main);
+}
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-deep);
+  margin-bottom: 0.8em;
+}
+.section-title strong{
+  color: var(--color-main);
+  font-weight: 700;
+}
+
+
+/* fade up */
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 /* button */
 .btn {
@@ -44,7 +151,7 @@ h1, h2, h3 {
   text-decoration: none;
   border-radius: 999px;
   padding: 10px 16px;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   transition: 0.25s;
   border: 1px solid transparent;
@@ -62,52 +169,107 @@ h1, h2, h3 {
 }
 .btn-ghost:hover { background: rgba(0,190,255,0.3); }
 
-.section {
-  height: calc(100vh - 80px);
-  padding: 40px 0;
-  scroll-margin-top: 120px;
+
+/* more-tile */
+.more-tile-wrapper{
+  margin-top:6rem;
+  display:flex;
+  justify-content:center;
 }
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 40px;
-  margin-left: 20px;
-  margin-bottom: 40px;
+.more-tile{
+  position:relative;
+  display:block;
+  width:45rem;
+  height:12rem;
+  border-radius:2rem;
+  overflow:hidden;
+  text-decoration:none;
+  box-shadow:0 1rem 2.5rem rgba(0,0,0,0.10);
+  transition:.3s;
 }
-.section-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  margin-bottom: 20px;
+.more-tile img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  transform:scale(1.02);
+  transition:.35s;
 }
-.section-title h2 {
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin: 0;
+.more-tile::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    90deg,
+    rgba(0,190,255,0.5) 0%,
+    rgba(0,190,255,0.5) 50%,
+    rgba(0,190,255,0.5) 100%
+  );
+  transition:.35s;
 }
-.section-title span {
-  font-size: 14px;
-  letter-spacing: 2px;
-  color: var(--color-blue);
+.more-tile-title{
+  position:absolute;
+  left:2rem;
+  bottom:3.5rem;
+  z-index:1;
+  color:#fff;
+  font-size:3.5rem;
+  font-weight:300;
+  letter-spacing:.06em;
+  text-shadow:0 .125rem .625rem rgba(0,0,0,0.35);
 }
-.section-header p {
-  max-width: 600px;
-  font-size: 16px;
-  line-height: 1.8;
-  color: #555;
-  max-width: 480px;
+.more-tile-subtitle{
+  position:absolute;
+  left:2rem;
+  bottom:1.6rem;
+  z-index:1;
+  color:#fff;
+  font-size:1.5rem;
+  letter-spacing:.12em;
+  opacity:.9;
+  text-transform:uppercase;
 }
+.more-tile-arrow{
+  position:absolute;
+  right:1.75rem;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:1;
+  width:3.125rem;
+  height:3.125rem;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  font-size:1.75rem;
+  color:#0b4d6b;
+  background:rgba(255,255,255,0.95);
+  transition:.35s;
+}
+.more-tile:hover{
+  transform:translateY(-0.2rem);
+  box-shadow:0 1.25rem 2.5rem rgba(0,0,0,0.3);
+}
+.more-tile:hover img{
+  transform:scale(1.08);
+}
+.more-tile:hover::after{
+  background:linear-gradient(
+    90deg,
+    rgba(0,190,255,0.7) 0%,
+    rgba(0,190,255,0.7) 100%
+  );
+}
+.more-tile:hover .more-tile-arrow{
+  transform:translateY(-50%) translateX(.25rem);
+}
+
+
 
 .page-title {
   text-align: center;
   margin-bottom: 40px;
 }
-
-
 .page-header {
-  margin-top: 80px;
+  margin-top: 5rem;
   position: relative;
   background: linear-gradient(
     rgba(0, 190, 255, 0.7),
@@ -117,6 +279,7 @@ h1, h2, h3 {
   background-size: cover;
   background-position: center;
   color: white;
+  font-family: var(--font-serif);
 }
 .page-header-overlay {
   padding: 90px 20px;
@@ -128,12 +291,13 @@ h1, h2, h3 {
   margin: 0 auto;
 }
 .page-header .section-ja {
-  font-size: 13px;
+  font-size: 24px;
   letter-spacing: 1px;
   opacity: 0.8;
 }
 .page-header h1 {
-  font-size: 34px;
+  font-size: 72px;
   margin: 12px 0 18px;
-  font-weight: 700;
+  font-weight: 400;
 }
+

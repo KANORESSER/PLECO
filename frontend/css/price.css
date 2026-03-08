@@ -1,0 +1,103 @@
+.price {
+    background: 
+    linear-gradient(rgba(0, 190, 255, 0.2), rgba(0, 190, 255, 0.2));
+    background:
+    radial-gradient(circle at 30% 90%, rgba(0,190,255,0.3), transparent 40%),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0,190,255,0.2), transparent 65%),
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.8), transparent 60%),
+    url("../../images/price.png") center/cover no-repeat,
+    var(--color-main-light);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin-bottom: 1.2rem;
+}
+.section-title p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-main);
+}
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-deep);
+}
+.section-header p {
+  margin: 0;
+}
+.section-header strong{
+  color: var(--color-main);
+  font-weight: 700;
+}
+
+
+.price-container {
+  background-color: var(--color-white-base);
+  background: rgba(255,255,255,0.7);
+  padding: 3rem 4rem;
+  border-radius: 1rem;
+}
+.price-container h3 {
+  text-align: center;
+  margin-bottom: 0.8em;
+}
+.price-cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.5rem;
+  margin-bottom: 2rem;
+}
+.price-card{
+  position: relative;
+  background: var(--color-main-light);
+  border-radius: 2rem;
+  margin: 0;
+  padding: 2.4rem 2rem 1rem;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+}
+/* 見出し */
+.price-card-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.price-card-head h4{
+  margin-top: 0;
+  color: var(--color-deep);
+  margin-bottom: 2rem;
+}
+/* content */
+.price-card-content{
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:1.5rem;
+  align-items: start;
+}
+.price-card-text p{
+  margin: 0 0 1.2rem;
+  font-size: 1rem;
+}
+.price-card-content img{
+  width: 100%;
+  height: auto;
+}
+
+.price-plan-btn {
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}

@@ -1,136 +1,35 @@
+.about {
+  padding: 5rem 10rem;
+  background:
+    radial-gradient(circle at 30% 90%, rgba(0,190,255,0.3), transparent 40%),
+    radial-gradient(circle at 20% 20%, rgba(255,255,255,0.8), transparent 40%),
+    radial-gradient(circle at 80% 30%, rgba(0,190,255,0.2), transparent 65%),
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.8), transparent 60%),
+    var(--color-main-light);
+  /* background: 
+    url(../../images/logo/logo_bg.png) center / cover no-repeat; */
+}
+
 .about-section {
-  padding: 12px 24px;
-  height: calc(90vh-80px);
-}
-.about-section h2 {
-  font-size: 56px;
-  color: var(--color-blue);
-  text-align: center;
-}
-.about-section h3 {
-  font-size: 32px;
-  color: var(--main-deep);
-  text-align: center;
-}
-.about-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
   align-items: center;
 }
-.about-content img {
-  flex: 1;
-  max-width: 50%;
+.about-image img {
+  width: 100%;
+  height: 20rem;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 1rem;
 }
-.about-text {
-  flex: 1;
+.about-text h2 {
+  margin-bottom: 0.5rem;
 }
-.about-text p {
-  font-size: 18px;
-}
-.section01, .section03, .section05 {
-  background-color: var(--color-white-base);
-}
-.section02, .section04 {
-  background-color: var(--color-main-light);
-}
-
-
-
-
-
-
-.origin-container {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-
-.origin-logo img {
-  width: 180px;
-}
-
-.origin-text {
-  flex: 1;
-}
-
-.origin-text p {
-  line-height: 1.9;
-  margin-bottom: 20px;
-}
-
-.message-content {
-  text-align: center;
-}
-
-.message-photo img {
-  width: 240px;
-  height: 240px;
-  border-radius: 50%;
-  object-fit: cover;
-  margin-bottom: 20px;
-}
-
-.message-name h3 {
-  margin-top: 10px;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-.message-highlight {
-  margin: 40px 0 20px;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.message-main p {
-  line-height: 1.9;
-  margin-bottom: 18px;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* ======================
-   Company Section
-====================== */
-
-.company-section {
-  padding: 100px 0;
-  background: #f7f9fb;
-}
-
-
-.company-table {
-  border-top: 1px solid #dcdcdc;
-  margin-top: 48px;
-}
-
-.company-row {
-  display: flex;
-  border-bottom: 1px solid #dcdcdc;
-}
-
-/* 左カラム */
-.company-th {
-  width: 260px;
-  background: #e9f4fb; /* 薄いブルー */
-  padding: 22px 30px;
-  font-weight: 600;
-  font-size: 15px;
-  color: #2b4c7e;
-  display: flex;
-  align-items: center;
-}
-
-/* 右カラム */
-.company-td {
-  flex: 1;
-  background: #ffffff;
-  padding: 22px 30px;
-  font-size: 14px;
-  line-height: 1.8;
-  color: #333;
+.about-text h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
 }

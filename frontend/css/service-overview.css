@@ -1,0 +1,155 @@
+.section-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  margin-bottom: 1.2rem;
+}
+.section-title p {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--color-main);
+}
+.section-title h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--color-deep);
+}
+.section-header p {
+  margin: 0;
+}
+.section-header strong{
+  color: var(--color-main);
+  font-weight: 700;
+}
+
+
+
+/* 横並び */
+.service-overview-cards{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:1.5rem;
+}
+/* カード本体 */
+.service-overview-card{
+  position: relative;
+  background: var(--color-main-light);
+  border-radius: 2rem;
+  margin: 0;
+  padding: 2.4rem 2rem 1rem;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+  backdrop-filter: blur(6px);
+}
+/* .service-overview-card-startup::before,
+.service-overview-card-operation::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1.2rem;
+  border-radius: 5rem 5rem 0 0;
+}
+.service-overview-card-startup::before{
+  background: linear-gradient(90deg, #24b7ff 0%, #5dc6ff 100%);
+}
+.service-overview-card-operation::before{
+  background: linear-gradient(90deg, #7cc7ff 0%, #a9dfff 100%);
+} */
+/* 見出し */
+.service-overview-card-head{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.service-overview-card-head h3{
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-deep);
+}
+
+/* content */
+.service-overview-card-content{
+  display:grid;
+  grid-template-columns:1.1fr 1fr;
+  gap:1.5rem;
+  align-items: start;
+}
+.service-overview-card-text p {
+  margin: 0 0 1.2rem;
+  font-size: 1rem;
+}
+.service-overview-card-content img {
+  width: 100%;
+  height: auto;
+}
+/*  more */
+.more {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+/* 円ボタン */
+.circle-btn {
+  position: relative;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-decoration: none;
+}
+/* 内側のアニメーション円 */
+.circle-btn::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: var(--color-main-light2);
+  border-radius: 50%;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+/* 共通矢印 */
+.arrow {
+  position: absolute;
+  font-size: 1.4rem;
+  color: #1e73be;
+  color: var(--color-deep);
+  transition: all 0.4s cubic-bezier(.4,0,.2,1);
+}
+/* 通常表示用 */
+.arrow-default {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* 左から飛んでくる用 */
+.arrow-hover {
+  opacity: 0;
+  transform: translateX(-40px);
+}
+/* hover時 */
+.circle-btn:hover::before {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.circle-btn:hover .arrow-default {
+  opacity: 0;
+}
+.circle-btn:hover .arrow-hover {
+  opacity: 1;
+  transform: translateX(0);
+}

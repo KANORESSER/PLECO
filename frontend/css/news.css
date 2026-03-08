@@ -12,18 +12,19 @@
   margin: 0 auto;
 }
 
-
-.more-link {
-  font-size: 14px;
-  color: #333;
-  text-decoration: none;
-  border-bottom: 1px solid #333;
-  padding-bottom: 3px;
-  transition: 0.3s;
+/* タイトル真ん中・more右寄せ */
+.news-inner .section-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.more-link:hover {
-  opacity: 0.6;
+.section-header .news-more {
+  position: absolute;
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 /* レイアウト */
@@ -74,7 +75,7 @@
 .news-item {
   display: flex;
   gap: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
   border-bottom: 1px solid #e5e5e5;
 }
 

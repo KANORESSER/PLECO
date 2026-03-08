@@ -1,0 +1,16 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="#00beff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+
+    <!-- 家 -->
+    <path d="M20 55 L60 25 L100 55"></path>
+    <rect x="30" y="55" width="60" height="40" rx="4"></rect>
+
+    <!-- ドア -->
+    <rect x="55" y="70" width="10" height="25"></rect>
+
+    <!-- 虫眼鏡 -->
+    <circle cx="85" cy="85" r="10"></circle>
+    <line x1="92" y1="92" x2="102" y2="102"></line>
+
+  </g>
+</svg>

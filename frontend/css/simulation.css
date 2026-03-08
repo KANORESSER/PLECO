@@ -5,7 +5,7 @@
     rgba(0, 190, 255, 0.85),
     rgba(0, 160, 220, 0.85)
   ),
-  url("../images/simulation-bg.jpg"); /* 背景画像あれば */
+  url("../../images/simulation.jpg"); /* 背景画像あれば */
   background-size: cover;
   background-position: center;
   color: white;
