@@ -1,0 +1,82 @@
+.contact-page {
+  padding-top: 10rem;
+  
+}
+
+
+.contact-section{
+  padding:2rem 0 6rem;
+}
+
+.cf7-table{
+max-width:900px;
+margin:auto;
+background: white;
+padding:40px;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+.cf7-row{
+  display:grid;
+  grid-template-columns:200px 1fr;
+  padding:18px 0;
+  border-bottom:1px solid #ddd;
+  align-items: center;
+}
+.cf7-label{
+font-weight:600;
+color:#333;
+}
+.req{
+background:#ff7da6;
+color:#fff;
+font-size:11px;
+padding:2px 6px;
+border-radius:4px;
+margin-left:6px;
+}
+
+.cf7-input input,
+.cf7-input textarea{
+width:100%;
+padding:12px;
+border:1px solid #ddd;
+border-radius:6px;
+background:#f7f7f7;
+}
+
+.cf7-input textarea{
+min-height:140px;
+}
+.tel-group input{
+width:80px;
+}
+.checkbox-grid label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.checkbox-grid input{
+  width:auto;
+}
+.cf7-input .wpcf7-list-item{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-right:24px;
+}
+
+.cf7-input.location {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.cf7-input input[type="radio"]{
+  width:auto;
+}
+
+.cf7-submit{
+  text-align:center;
+  margin-top:40px;
+}

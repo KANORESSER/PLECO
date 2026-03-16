@@ -9,40 +9,6 @@
     url("../../images/price.png") center/cover no-repeat,
     var(--color-main-light);
 }
-
-.section-header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-.section-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0px;
-  margin-bottom: 1.2rem;
-}
-.section-title p {
-  font-size: 1rem;
-  margin: 0;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: var(--color-main);
-}
-.section-title h2 {
-  font-size: 2.5rem;
-  font-weight: 500;
-  color: var(--color-deep);
-}
-.section-header p {
-  margin: 0;
-}
-.section-header strong{
-  color: var(--color-main);
-  font-weight: 700;
-}
-
-
 .price-container {
   background-color: var(--color-white-base);
   background: rgba(255,255,255,0.7);

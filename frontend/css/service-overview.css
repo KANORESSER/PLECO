@@ -1,4 +1,4 @@
-.section-header {
+/* .section-header {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,11 +24,8 @@
 }
 .section-header p {
   margin: 0;
-}
-.section-header strong{
-  color: var(--color-main);
-  font-weight: 700;
-}
+}*/
+
 
 
 

@@ -1,0 +1,85 @@
+/* ===============================
+   Strengths Section
+================================ */
+.strength-section {
+  padding: 12px 24px;
+  height: calc(90vh-80px);
+}
+.strength-section h2 {
+  font-size: 56px;
+  color: var(--color-blue);
+  text-align: center;
+}
+.strength-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+}
+.strength-content img {
+  flex: 1;
+  max-width: 50%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.strength-text {
+  flex: 1;
+}
+.strength-text p {
+  font-size: 18px;
+}
+.section01, .section03, .section05 {
+  background-color: var(--color-white-base);
+}
+.section02, .section04 {
+  background-color: var(--color-main-light);
+}
+
+
+/* ===============================
+   Case Section
+================================ */
+
+.case-section {
+  padding: 100px 20px;
+  background: #f7f9fa;
+}
+
+.case-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.case-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.case-item.reply {
+  justify-content: flex-end;
+}
+
+.case-person {
+  width: 120px;
+  text-align: center;
+}
+
+.case-person img {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.case-message {
+  max-width: 500px;
+  padding: 15px 20px;
+  border-radius: 15px;
+  background: #d9eaf6;
+  margin-left: 20px;
+}
+
+.case-item.reply .case-message {
+  background: #c8f1df;
+  margin-left: 0;
+  margin-right: 20px;
+}
