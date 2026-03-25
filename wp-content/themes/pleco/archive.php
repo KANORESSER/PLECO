@@ -27,8 +27,7 @@
         foreach ($categories as $category) {
         ?>
 
-          <a href="<?php echo get_category_link($category->term_id); ?>"
-             class="news-category-btn <?php if (is_category($category->term_id)) echo 'active'; ?>">
+          <a href="<?php echo get_category_link($category->term_id); ?>"class="news-category-btn <?php if (is_category($category->term_id)) echo 'active'; ?>">
             <?php echo esc_html($category->name); ?>
           </a>
 

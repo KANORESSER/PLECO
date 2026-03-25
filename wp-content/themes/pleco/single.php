@@ -91,7 +91,7 @@
     </article>
 
     <!-- サイドバー -->
-    <aside class="single-sidebar news-sidebar">
+    <aside class="single-sidebar news-sidebar pc-only">
       <?php get_sidebar(); ?>
     </aside>
 
@@ -158,6 +158,11 @@
     </section>
 
   <?php endif; wp_reset_postdata(); ?>
+
+  <div class="news-all-btn">
+    <a href="/news" class="btn btn-lg">記事一覧</a>
+  </div>
+
 
 </main>
 

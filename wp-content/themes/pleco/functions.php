@@ -3,9 +3,19 @@
 function pleco_setup() {
   // アイキャッチ画像
   add_theme_support('post-thumbnails');
+  // title
+  add_theme_support('title-tag');
 }
 
 add_action('after_setup_theme', 'pleco_setup');
+
+add_filter('pre_get_document_title', function($title) {
+  if (is_front_page()) {
+    return get_bloginfo('name');
+  }
+  return get_the_title() . ' | ' . get_bloginfo('name');
+});
+
 
 function pleco_enqueue() {
 
@@ -42,31 +52,38 @@ function pleco_enqueue() {
   }
 
   // 下層ページ
+  if (is_page('about')) {
+    wp_enqueue_style(
+      'page-about',
+      get_template_directory_uri() . '/css/page-about.css'
+    );
+  }
+
   if (is_page('startup-support')) {
     wp_enqueue_style(
-      'startup-support-page',
-      get_template_directory_uri() . '/css/startup-support-page.css'
+      'page-startup-support',
+      get_template_directory_uri() . '/css/page-startup-support.css'
     );
   }
 
   if (is_page('management')) {
     wp_enqueue_style(
-      'management-page',
-      get_template_directory_uri() . '/css/management-page.css'
+      'page-management',
+      get_template_directory_uri() . '/css/page-management.css'
     );
   }
 
   if (is_page('price')) {
     wp_enqueue_style(
-      'price-page',
-      get_template_directory_uri() . '/css/price-page.css'
+      'page-price',
+      get_template_directory_uri() . '/css/page-price.css'
     );
   }
 
   if (is_page('contact')) {
     wp_enqueue_style(
-      'contact-page',
-      get_template_directory_uri() . '/css/contact-page.css'
+      'page-contact',
+      get_template_directory_uri() . '/css/page-contact.css'
     );
   }
 

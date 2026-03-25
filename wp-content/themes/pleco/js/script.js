@@ -3,10 +3,14 @@ const hamburger = document.getElementById("hamburger");
 const spMenu = document.getElementById("spMenu");
 hamburger?.addEventListener("click", () => {
   spMenu.classList.toggle("is-open");
+  document.body.classList.toggle("is-open");
 });
 // メニュー押したら閉じる
 spMenu?.querySelectorAll("a").forEach((a) => {
-  a.addEventListener("click", () => spMenu.classList.remove("is-open"));
+  a.addEventListener("click", () => {
+    spMenu.classList.remove("is-open");
+    document.body.classList.remove("is-open"); // ←bodyも戻す
+  });
 });
 
 //Count up
@@ -19,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function startCounter() {
     counters.forEach(counter => {
       const target = +counter.dataset.target;
-      const duration = 2000;
+      const duration = 1000;
       const startTime = performance.now();
 
       function update(now) {

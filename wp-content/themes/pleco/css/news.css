@@ -71,3 +71,19 @@
   display: block;
   margin: 0 auto;
 }
+.news-all-btn {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .top-news .news-wrapper {
+    display:flex;
+    overflow-x:auto;
+    gap:1.5rem;
+    padding-bottom:1rem;
+  }
+  .news-item {
+    flex: 0 0 80%;
+  }
+
+}

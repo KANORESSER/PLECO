@@ -1,47 +1,94 @@
+/* cta */
+.final-cta {
+  padding: 8rem 0;
+  background:
+    linear-gradient(rgba(0,120,170,0.4), rgba(0,120,170,0.4)),
+    url("../images/contact.png") center/cover no-repeat;
+  color: white;
+  text-align: center;
+}
+.final-cta-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 60px;
+}
+.final-cta h2 {
+  color: white;
+  margin-bottom: 2em;
+}
+.final-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.final-cta-buttons a {
+  background-color: rgba(255,255,255,0.1);
+  border: 1px solid white;
+}
+.final-cta-buttons .btn {
+  flex: 1;
+  text-align: center;
+  max-width: 18rem;
+}
+
+
+
+
+
+
+
+
+
 .footer {
   background: var(--color-deep);
   color: #ffffff;
   font-family: "Noto Sans JP", sans-serif;
 }
-
+.footer p {
+  color: white;
+}
 .footer-inner {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20px 40px 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
+  padding: 3rem; 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  gap: 2.5rem;
 }
-
 .footer-logo {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 600;
-  letter-spacing: 2px;
-  margin-bottom: 20px;
+  letter-spacing: 0.125rem;
+  margin-bottom: 1.25rem;
 }
-
 .footer-left p {
   line-height: 1.8;
-  font-size: 14px;
-  opacity: 0.8;
+  font-size: 0.875rem;
+  margin-bottom: 0.5em;
+}
+.footer-left a{
+  color: inherit;
+  text-decoration: none;
+}
+.footer-left a:hover{
+  opacity: .7;
 }
 
 .footer-links ul {
-  list-style: none;
   padding: 0;
 }
 
 .footer-links li {
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
   text-align: center;
 }
 
 .footer-links a {
   text-decoration: none;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 1rem;
   transition: 0.3s;
 }
 
@@ -54,26 +101,114 @@
   align-items: center;
 }
 
-.footer-btn {
-  display: inline-block;
-  padding: 12px 30px;
-  border: 1px solid #ffffff;
-  border-radius: 30px;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 14px;
-  transition: 0.3s;
-}
-
-.footer-btn:hover {
-  background: #ffffff;
-  color: #0f2e3a;
-}
-
 .footer-bottom {
-  border-top: 1px solid rgba(255,255,255,0.2);
+  border-top: 0.0625rem solid rgba(255,255,255,0.2);
   text-align: center;
-  padding: 20px 0;
-  font-size: 12px;
+  padding: 1.25rem 0;
+  font-size: 0.75rem;
   opacity: 0.6;
+}
+
+
+/* more-tile-wrapper */
+.footer .more-tile-wrapper{
+  margin-top:0;
+  display:flex;
+  justify-content:center;
+}
+.footer .more-tile{
+  position:relative;
+  display:block;
+  width:22rem;
+  height:7rem;
+  font-size: 1rem;
+  border-radius:0.5rem;
+  overflow:hidden;
+  text-decoration:none;
+  background:var(--color-main-light);
+  box-shadow:0 0.5rem 1.2rem rgba(0,0,0,0.2);
+  transition:.25s;
+}
+.footer .more-tile img{
+  position:absolute;
+  inset:0;
+  width:80%;
+  height:100%;
+  object-fit:cover;
+  opacity:0.9;
+  transform:none;
+}
+/* 青いフィルター */
+.footer .more-tile::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,140,220,.8);
+}
+/* タイトル */
+.footer .more-tile-title{
+  position:absolute;
+  left:2rem;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:2;
+  color:#fff;
+  font-size:1.6em;
+  font-weight:400;
+  letter-spacing:.04em;
+}
+/* 矢印 */
+.footer .more-tile-arrow{
+  position:absolute;
+  right:1.5rem;
+  top:50%;
+  transform:translateY(-50%);
+  z-index:2;
+
+  width:2.6rem;
+  height:2.6rem;
+  border-radius:50%;
+
+  display:grid;
+  place-items:center;
+
+  font-size:1.4em;
+  color:#0b4d6b;
+  background:#fff;
+}
+/* hover */
+.footer .more-tile:hover{
+  transform:translateY(-2px);
+  box-shadow:0 0.8em 1.8em rgba(0,0,0,.35);
+  filter:brightness(1.1);
+}
+
+
+
+
+@media (max-width: 768px) {
+  .final-cta h2 {
+    margin-bottom: 1em;
+  }
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  .footer-links a {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+  .footer .more-tile {
+    width: 18rem;
+    height: 5rem;
+    font-size: 0.8rem;
+  }
+  .footer .more-tile-title,
+  .footer .more-tile-subtitle {
+    left: 1rem;
+  }
+  .footer .more-tile-subtitle {
+    bottom: 0.7rem;
+  }
 }

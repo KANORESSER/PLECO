@@ -13,7 +13,10 @@
     font-size: 18px;
   }
   .sp-only {
-    display: inline;
+    display: block;
+  }
+  .pc-only {
+    display: none;
   }
 
   .works-stats {

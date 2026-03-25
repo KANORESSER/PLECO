@@ -1,5 +1,5 @@
 .price {
-    background: 
+    background:
     linear-gradient(rgba(0, 190, 255, 0.2), rgba(0, 190, 255, 0.2));
     background:
     radial-gradient(circle at 30% 90%, rgba(0,190,255,0.3), transparent 40%),
@@ -9,62 +9,89 @@
     url("../images/price.png") center/cover no-repeat,
     var(--color-main-light);
 }
-
 .price-container {
-  background-color: var(--color-white-base);
-  background: rgba(255,255,255,0.7);
-  padding: 3rem 4rem;
-  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 .price-container h3 {
   text-align: center;
   margin-bottom: 0.8em;
 }
-.price-cards{
+
+.price-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-bottom: 3rem;
+}
+.price-card {
   display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:1.5rem;
-  margin-bottom: 2rem;
+  grid-template-rows: 8rem 10rem;
+  background: rgba(255,255,255,0.7);
+  border-radius:1.5rem;
 }
-.price-card{
-  position: relative;
-  background: var(--color-main-light);
-  border-radius: 2rem;
-  margin: 0;
-  padding: 2.4rem 2rem 1rem;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.08);
-  backdrop-filter: blur(6px);
-}
-/* 見出し */
-.price-card-head{
+.price-card-header {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 0.5rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  padding: 1rem;
+  color: white;
+  text-align: center;
 }
-.price-card-head h4{
-  margin-top: 0;
-  color: var(--color-deep);
-  margin-bottom: 2rem;
+.price-card-header h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
 }
-/* content */
-.price-card-content{
-  display:grid;
-  grid-template-columns:1.1fr 1fr;
-  gap:1.5rem;
-  align-items: start;
+.price-card-header span {
+  display: inline-block;
+  background: white;
+  border-radius: 999px;
+  padding: 0.2em 0.6em;
 }
-.price-card-text p{
-  margin: 0 0 1.2rem;
-  font-size: 1rem;
+.card1 .price-card-header span {
+  color: #1FA9D6;
 }
-.price-card-content img{
-  width: 100%;
-  height: auto;
+.card2 .price-card-header span {
+  color: #0F89B5;
+}
+.card3 .price-card-header span {
+  color: #085A78;
+}
+.card1 .price-card-header {
+  background: linear-gradient(
+  135deg,
+  #36C2F3,
+  #1FA9D6
+  );
+}
+.card2 .price-card-header {
+  background: linear-gradient(
+  135deg,
+  #1FA9D6,
+  #0F89B5
+  );
+}
+.card3 .price-card-header {
+  background: linear-gradient(
+  135deg,
+  #0C7AA3,
+  #085A78
+  );
+}
+.price-card-text {
+  padding: 1rem 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: var(--color-muted);
 }
 
 .price-plan-btn {
-  display: block;
-  width: fit-content;
   margin: 0 auto;
 }

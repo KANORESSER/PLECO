@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>株式会社PLECO</title>
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/logo/ロゴ-グラデーション.png">
-  
+
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
 
   <?php wp_head(); ?>
@@ -25,8 +24,7 @@
     </a>
 
     <nav class="nav a-hover">
-      <a href="<?php echo home_url('/#about'); ?>">会社紹介</a>
-      <a href="<?php echo home_url('/#service-overview'); ?>">サービス</a>
+      <a href="/about">会社紹介</a>
       <a href="/startup-support">民泊開業支援</a>
       <a href="/management">民泊運営代行</a>
       <a href="/price">料金プラン</a>
@@ -45,9 +43,8 @@
   </div>
 
   <!-- sp menu -->
-  <div class="sp-menu" id="spMenu">
+  <div class="sp-menu a-hover" id="spMenu">
     <a href="<?php echo home_url('/#about'); ?>">会社紹介</a>
-    <a href="<?php echo home_url('/#service-overview'); ?>">サービス</a>
     <a href="/startup-support">民泊開業支援</a>
     <a href="/management">民泊運営代行</a>
     <a href="/price">料金プラン</a>

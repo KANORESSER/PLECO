@@ -1,7 +1,7 @@
 .startup-support h3 {
   margin: 0 auto 0.8em;
 }
-.startup-recommend {
+#startup-support .startup-recommend {
   margin-bottom: 4rem;
 }
 .recommend-container{
@@ -79,11 +79,35 @@
 /* CTA */
 .startup-cta{
   text-align:center;
-  margin-bottom: 6rem;
+  /* margin-bottom: 6rem; */
 }
 .startup-cta h2 {
   margin-bottom: 0.2em;
 }
 .startup-cta span {
   margin-bottom: 1.5rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .recommend-container {
+    flex-direction: column;
+  }
+  .recommend-item {
+    text-align: center;
+  }
+  .startup-flow-grid {
+    grid-template-columns: 1fr;
+  }
+  .startup-flow-grid .card1,
+  .startup-flow-grid .card2,
+  .startup-flow-grid .card3,
+  .startup-flow-grid .card4,
+  .startup-flow-grid .card5{
+    grid-column:auto;
+  }
+  .margin-bottom-0 {
+    margin-bottom : 0;
+  }
 }

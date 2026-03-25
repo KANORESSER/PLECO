@@ -24,11 +24,12 @@
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  gap: 8rem;
+  gap: 4rem;
 }
-.feature {
-  position: relative;
-  text-align: center;
+.feature{
+  width:20rem;
+  position:relative;
+  text-align:center;
 }
 .feature::before {
   content: "";
@@ -62,9 +63,6 @@
 /* recommend */
 .startup-support h3 {
   margin: 0 auto 0.8em;
-}
-.startup-recommend {
-  margin-bottom: 4rem;
 }
 .recommend-container{
   background:rgba(0,190,255,0.05);
@@ -106,6 +104,7 @@
   align-items: center;
   text-align: center;
   padding: 0.5rem 0.5rem;
+  background:rgba(0,190,255,0.05);
 }
 .opening-flow-step-img{
   width: 100%;
@@ -117,16 +116,21 @@
   border-radius: 1rem;
   object-fit:cover;
 }
-.opening-flow-step h4 {
-  margin-bottom: 0.5rem;
+.opening-flow-step h4{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:0.5rem;
+  font-weight: 600;
 }
-.opening-flow-step span {
-  font-size: 1.728rem;
-  font-weight: 700;
-  color: var(--color-main);
-  margin-bottom: 0.3em;
-  margin-right: 0.5em;
+.opening-flow-step span{
+  font-size: 1.6rem;
+  font-weight:600;
+  color:var(--color-main);
+  margin-bottom: 0;
+  font-family: var(--font-sans);
 }
+
 
 /* strength */
 .strength-container{
@@ -161,6 +165,19 @@
 .strength-item p{
   line-height:1.7;
 }
+  .strength-container{
+    padding: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .strength-item {
+    padding: 1rem;
+  }
+  .strength-item svg{
+    width:8rem;
+    height:8rem;
+    display:block;
+  }
 
 
 /* faq */
@@ -171,7 +188,7 @@
   padding: 4rem 4rem;
   box-shadow:0 30px 60px rgba(0,0,0,0.08);
 }
-.faq-item {
+.faq-item:not(:last-child) {
   border-bottom: 0.0625rem solid #cfcfcf;
 }
 .faq-label {
@@ -242,5 +259,67 @@
 }
 .faq-item.active .icon::after {
   display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 9rem 1.5rem 6rem;
+    gap: 4rem;
+  }
+  .hero-text h1 {
+    font-size:2rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .hero-features {
+    flex-direction: column;
+    align-items:center;
+    gap:5rem;
+  }
+  .feature::before{
+    width:22rem;
+    height:22rem;
+  }
+  .feature span{
+    font-size:2rem;
+  }
+  .feature p{
+    font-size:1.3rem;
+  }
+
+  .recommend-item {
+    text-align: center;
+  }
+
+  .opening-flow-steps {
+    grid-template-columns: 1fr;
+  }
+
+
+  .faq-items{
+    padding:2rem 1.5rem;
+  }
+  .faq-question{
+    align-items: center;
+  }
+  .faq-label{
+    font-size:1.4rem;
+    flex-shrink:0;
+  }
+  .faq-text{
+    flex:1;
+    font-size:1rem;
+    line-height:1.6;
+  }
+  .icon{
+    width:2rem;
+    height:2rem;
+  }
+
 }
 
