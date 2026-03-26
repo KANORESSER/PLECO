@@ -129,8 +129,8 @@
         </div>
 
       </div>
-      <div class="price-card card3">
-
+      <div class="price-card card3 plan-featured">
+        <div class="badge">人気<br><strong>NO.1</strong></div>
         <div class="price-card-header">
           <span>すべてお任せ</span>
           <h3>フルサポートプラン</h3>

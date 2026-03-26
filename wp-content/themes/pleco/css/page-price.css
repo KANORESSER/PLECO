@@ -14,6 +14,7 @@
 .price-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 0.6fr 0.6fr 1fr;
   gap: 1.2rem;
   align-items: stretch;
   margin-bottom: 4rem;
@@ -32,6 +33,43 @@
   background: rgba(255,255,255,0.5);
   box-shadow:0 30px 60px rgba(0,0,0,0.06),0 -10px 30px rgba(0,0,0,0.04);
   border-radius:1.5rem;
+}
+.plan-featured {
+  box-shadow: 0 24px 24px rgba(0,190,255,0.2);
+  position: relative;
+}
+.plan-featured .price-card-header h3 {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+.plan-featured .price-card-header span,
+.plan-featured .price-card-text p  {
+  font-weight: 700;
+}
+.badge {
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  background: #00beff;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 40%;
+  line-height: 1.2;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+.badge strong {
+  font-size: 32px;
+}
+.badge::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  right: 60px;
+  border-width: 12px;
+  border-style: solid;
+  border-color: #00beff transparent transparent transparent;
 }
 .price-card-head{
   display: flex;
@@ -474,6 +512,27 @@ thead {
   .price-cards {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+  }
+  .plan-featured .price-card-header h3 {
+    font-size: 1.8rem;
+  }
+  .badge {
+    top: -24px;
+    right: -12px;
+    font-size: 18px;
+    padding: 13px 19px;
+  }
+  .badge strong {
+    font-size: 24px;
+  }
+  .badge::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 45px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #00beff transparent transparent transparent;
   }
 
 

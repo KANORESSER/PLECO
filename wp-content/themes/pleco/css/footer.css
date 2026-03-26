@@ -190,6 +190,9 @@
   .final-cta h2 {
     margin-bottom: 1em;
   }
+  .final-cta-buttons {
+    flex-direction: column;
+  }
   .footer-inner {
     grid-template-columns: 1fr;
     text-align: center;

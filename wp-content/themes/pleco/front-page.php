@@ -86,8 +86,6 @@
         </p>
         <a href="/about" class="btn btn-lg">会社紹介はこちら</a>
       </div>
-
-      <!-- <a class="btn btn-lg fade-up" href="about.html">会社紹介を見る</a> -->
     </section>
 
     <!-- service -->
@@ -640,7 +638,8 @@
               </p>
             </div>
           </div>
-          <div class="price-card card3">
+          <div class="price-card card3 plan-featured">
+            <div class="badge">人気<br><strong>NO.1</strong></div>
             <div class="price-card-header">
               <span>すべてお任せ</span>
               <h3>フルサポートプラン</h3>

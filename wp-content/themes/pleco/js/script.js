@@ -72,3 +72,4 @@ document.querySelectorAll(".faq-question").forEach(button => {
     item.classList.toggle("active");
   });
 });
+

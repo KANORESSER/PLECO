@@ -44,7 +44,7 @@
 
   <!-- sp menu -->
   <div class="sp-menu a-hover" id="spMenu">
-    <a href="<?php echo home_url('/#about'); ?>">会社紹介</a>
+    <a href="/about">会社紹介</a>
     <a href="/startup-support">民泊開業支援</a>
     <a href="/management">民泊運営代行</a>
     <a href="/price">料金プラン</a>
