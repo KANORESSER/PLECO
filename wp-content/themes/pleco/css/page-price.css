@@ -22,8 +22,8 @@
 .price-card{
   display:grid;
   grid-template-rows:
-    1fr  /* header */
-    0.5fr   /* price */
+    16rem  /* header 1fr */
+    5.5rem   /* price 0.5fr*/
     auto  /* アカウント管理 */
     auto   /* 清掃管理 */
     auto
@@ -305,9 +305,10 @@
   gap: 2rem;
   justify-content: center;
   align-items: stretch;
-  padding-bottom: 2rem;
 }
-.spot-content:not(:last-child) {
+.spot-content-text1 {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   border-bottom: 1px solid var(--color-sub);
 }
 
@@ -334,11 +335,7 @@
   height: 100%;
   border-radius: 1rem;
 }
-.spot-content-text:not(:last-child) {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid var(--color-sub);
-}
+
 
 
 /* cleaning */
@@ -474,8 +471,117 @@ thead {
   filter:brightness(1.1);
 }
 
+@media (max-width: 1490px) {
+.price-card{
+  display:grid;
+  grid-template-rows:
+    18rem
+    5.5rem
+    auto
+    auto
+    auto
+    auto
+    auto
+    auto;
+  }
+}
+@media (max-width: 1300px) {
+.price-card{
+  display:grid;
+  grid-template-rows:
+    19rem
+    5.5rem
+    auto
+    auto
+    auto
+    auto
+    auto
+    auto;
+  }
+}
+@media (max-width: 1160px) {
+  .price-card{
+    display:grid;
+    grid-template-rows:
+      18rem
+      5.5rem
+      auto
+      auto
+      auto
+      auto
+      auto
+      auto;
+    }
+  .price-plan.under-section {
+    padding: 10rem 3rem;
+  }
+}
+@media (max-width: 1080px) {
+  .price-card{
+    display:grid;
+    grid-template-rows:
+      20rem
+      5.5rem
+      auto
+      auto
+      auto
+      auto
+      auto
+      auto;
+    }
+  .spot.overlap-section {
+    padding: 10rem 3rem;
+  }
+  .cleaning.under-section {
+    padding: 10rem 3rem;
+  }
+}
+@media (max-width: 980px) {
+  .price-cards {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  .price-card{
+    display:grid;
+    grid-template-rows:
+      auto  /* header 1fr */
+      auto   /* price 0.5fr*/
+      auto  /* アカウント管理 */
+      auto   /* 清掃管理 */
+      auto
+      auto
+      auto
+      auto;   /* option */
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .plan-featured .price-card-header h3 {
+    font-size: 1.8rem;
+  }
+  .badge {
+    top: -24px;
+    right: -12px;
+    font-size: 18px;
+    padding: 13px 19px;
+  }
+  .badge strong {
+    font-size: 24px;
+  }
+  .badge::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    right: 45px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: #00beff transparent transparent transparent;
+  }
 
+}
 @media (max-width: 768px) {
+  .price-plan.under-section {
+    padding: 4rem 1.5rem;
+  }
   .hero {
     height: auto;
     padding: 9rem 1.5rem 6rem;
@@ -506,36 +612,6 @@ thead {
     justify-content: center;
   }
 
-  .price-inner-lead {
-    text-align: left;
-  }
-  .price-cards {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  .plan-featured .price-card-header h3 {
-    font-size: 1.8rem;
-  }
-  .badge {
-    top: -24px;
-    right: -12px;
-    font-size: 18px;
-    padding: 13px 19px;
-  }
-  .badge strong {
-    font-size: 24px;
-  }
-  .badge::after {
-    content: "";
-    position: absolute;
-    bottom: -20px;
-    right: 45px;
-    border-width: 12px;
-    border-style: solid;
-    border-color: #00beff transparent transparent transparent;
-  }
-
-
   .spot-header {
     margin-bottom: 1rem;
   }
@@ -550,6 +626,12 @@ thead {
   .spot-content-text {
     align-items: center;
     text-align: center;
+  }
+  .spot-content-text h4 {
+    margin: 0 auto 0.7em;
+  }
+  .spot.overlap-section {
+    padding: 2rem 1.5rem;
   }
 
   .cleaning-header {
@@ -575,5 +657,8 @@ thead {
   }
   .cleaning .more-tile-subtitle {
     bottom: 0.7rem;
+  }
+  .cleaning.under-section {
+    padding: 4rem 1.5rem;
   }
 }

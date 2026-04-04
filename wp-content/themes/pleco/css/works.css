@@ -1,4 +1,6 @@
-/* grid */
+.works {
+  scroll-margin-top: 5rem;
+}
 .works-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -8,6 +10,8 @@
 /* card */
 .works-card {
   grid-template-columns: 0.4fr 0.6fr;
+  max-width: 500px;
+  margin: 0 auto;
   background: var(--color-main-light);
   border-radius: 1rem;
   overflow: hidden;
@@ -86,7 +90,13 @@
   margin-left:0.1em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
+  .works.overlap-section {
+    padding: 2rem 2rem;
+  }
+}
+
+@media (max-width: 850px) {
   .works-cards {
     grid-template-columns: 1fr;
   }

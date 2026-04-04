@@ -365,9 +365,13 @@ main {
   text-align: center;
 }
 
-
-
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
+  main {
+    padding: 10rem 5rem 5rem;
+    background-color: var(--color-white-base);
+  }
+}
+@media (max-width: 900px) {
   main{
     padding: 8rem 1.5rem 3rem;
   }
@@ -403,7 +407,7 @@ main {
     color: var(--color-main);
     font-weight: 500;
     font-family: var(--font-sans);
-    margin-bottom: 0.2em;  
+    margin-bottom: 0.2em;
   }
   .toc__item a {
     margin-left: 0;
@@ -453,9 +457,11 @@ main {
     gap:1.5rem;
     padding-bottom:1rem;
   }
+  .related__items a {
+    max-width: 300px;
+    margin: 0 auto;
+  }
   .related__card {
     flex: 0 0 80%;
   }
-
-
 }

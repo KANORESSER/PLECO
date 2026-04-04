@@ -54,14 +54,20 @@
   filter: brightness(1.1)
 }
 
-.hero-cta {
+/* .hero-cta {
   display: flex;
   gap: 0.75rem;
-}
+} */
 .header-cta .btn {
-  width: 8rem;
   text-align: center;
   white-space: nowrap;
+}
+.header-cta .btn {
+  text-decoration: none;
+  border-radius: 62.4375rem;
+  padding: 0.625rem 1.4rem;
+  font-weight: 500;
+  font-size: 1.1rem;
 }
 
 .nav {
@@ -147,7 +153,7 @@ body.is-open{
   border-color: transparent;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .nav,
   .header-cta {
     display: none;

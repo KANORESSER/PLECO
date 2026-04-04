@@ -202,8 +202,7 @@
 
     <div class="spot-content">
       <div class="spot-content-text fade-up">
-
-        <div class="spot-content-text">
+        <div class="spot-content-text1">
           <h3 class="underline-h3 fade-up">駆けつけ要員の確保</h3>
           <p class="fade-up">
             京都市では宿泊施設内にスタッフが滞在しない体制で運営する施設に対して、緊急時等に現地に駆けつけができるように宿泊施設から800m以内の拠点にスタッフを待機させておくよう条例で定めています。<br>
@@ -213,17 +212,18 @@
             1施設15,000円 / 月 (税別)
           </p>
         </div>
-
-        <h3 class="underline-h3 fade-up">トラブル時の現地対応</h3>
-        <p class="fade-up">
-          日頃からしっかりと施設の点検をしていても、お客様に正確に案内をしていても、トラブルは必ず起きるものです。鍵をなくした、エアコンが動作しない、お湯がでない等、それらは突然やってきます。このような緊急時にオーナー様に代わって現地へ駆けつけて、トラブルの対処をさせていただきます。<br>
-        </p>
-        <h4 class="underline-h4 fade-up">費用</h4>
-        <p class="fade-up">
-          不足備品の配送対応 / 1回3,000円 (税別) ～<br>
-          鍵の紛失及び電子キーの故障対応 / 1回3,000円 (税別) ~
-          家電代替品の購入・設置 / 1回5,000月 (税別) ~
-        </p>
+        <div class="spot-content-text2">
+          <h3 class="underline-h3 fade-up">トラブル時の現地対応</h3>
+          <p class="fade-up">
+            日頃からしっかりと施設の点検をしていても、お客様に正確に案内をしていても、トラブルは必ず起きるものです。鍵をなくした、エアコンが動作しない、お湯がでない等、それらは突然やってきます。このような緊急時にオーナー様に代わって現地へ駆けつけて、トラブルの対処をさせていただきます。<br>
+          </p>
+          <h4 class="underline-h4 fade-up">費用</h4>
+          <p class="fade-up">
+            不足備品の配送対応 / 1回3,000円 (税別) ～<br>
+            鍵の紛失及び電子キーの故障対応 / 1回3,000円 (税別) ~
+            家電代替品の購入・設置 / 1回5,000月 (税別) ~
+          </p>
+        </div>
       </div>
       <img src="<?php echo get_template_directory_uri(); ?>/images/price/price-spot2.png" alt="駆け付け対応" class="spot-content-image fade-up pc-only">
     </div>
@@ -242,7 +242,7 @@
     <div class="cleaning-price-items">
       <div class="cleaning-price-item">
         <h3 class="underline-h3 fade-up">民泊清掃の基本料金</h3>
-        <table class="cleaning-table">
+        <table class="cleaning-table fade-up">
           <thead>
             <tr>
               <th>広さ（㎡）</th>
@@ -283,7 +283,7 @@
       </div>
       <div class="cleaning-price-item">
         <h3 class="underline-h3 fade-up">ホテル清掃の基本料金</h3>
-        <table class="cleaning-table">
+        <table class="cleaning-table fade-up">
           <thead>
             <tr>
               <th>部屋タイプ</th>

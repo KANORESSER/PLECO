@@ -3,11 +3,11 @@
 <!-- main -->
 <main class="startup-support">
 
-  <section class="hero fade-up">
+  <section class="startup-hero fade-up">
 
-    <div class="hero-text">
+    <div class="startup-hero-text">
 
-      <h1 class="hero-title">
+      <h1 class="startup-hero-title">
         民泊開業を、もっとスムーズに。<br>
         物件調査から開業までをトータルサポート
       </h1>
@@ -18,7 +18,7 @@
       </p>
     </div>
 
-    <div class="hero-features">
+    <div class="startup-hero-features">
 
       <div class="feature">
         <span>1</span>
@@ -78,7 +78,7 @@
       </div>
     </div>
 
-    <div class="opening-flow-steps fade-up">
+    <div class="opening-flow-steps">
         <!-- opening-flow-step 1 -->
       <div class="opening-flow-step">
         <div class="opening-flow-step-img">
@@ -100,6 +100,7 @@
           収支計画・改修計画を整理し、開業までの方針を明確にします。
         </p>
       </div>
+
         <!-- opening-flow-step 3 -->
       <div class="opening-flow-step">
         <div class="opening-flow-step-img">
@@ -120,6 +121,7 @@
           必要な改修工事や設備準備を行います。
         </p>
       </div>
+
         <!-- opening-flow-step 5 -->
       <div class="opening-flow-step">
         <div class="opening-flow-step-img">
@@ -130,6 +132,7 @@
           行政協議・申請手続きを進めます。
         </p>
       </div>
+
         <!-- opening-flow-step 6 -->
       <div class="opening-flow-step">
         <div class="opening-flow-step-img">
@@ -140,6 +143,7 @@
           家具・備品準備、撮影、ページ作成などを行います。
         </p>
       </div>
+
         <!-- opening-flow-step 7 -->
       <div class="opening-flow-step">
         <div class="opening-flow-step-img">
@@ -150,6 +154,7 @@
           開業前の確認やシミュレーションを行い、課題を調整します。
         </p>
       </div>
+
         <!-- opening-flow-step 8 -->
       <div class="opening-flow-step">
         <div class="opening-flow-step-img">
@@ -160,6 +165,7 @@
           予約サイト公開などを行い、募集を開始します。
         </p>
       </div>
+
         <!-- opening-flow-step 9 -->
       <div class="opening-flow-step">
         <div class="opening-flow-step-img">
@@ -170,6 +176,7 @@
           宿泊施設としての運営をスタートします。
         </p>
       </div>
+
         <!-- opening-flow-step 10 -->
       <div class="opening-flow-step">
         <div class="opening-flow-step-img">
@@ -341,7 +348,7 @@
   </section>
 
   <!-- FAQ -->
-  <section class="startu-faq under-section">
+  <section class="startup-faq under-section">
 
     <div class="section-header fade-up">
       <div class="section-title">

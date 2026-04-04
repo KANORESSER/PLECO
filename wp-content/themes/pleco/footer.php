@@ -58,7 +58,8 @@
   </div>
 
   <div class="footer-bottom">
-    <p>© 2025 PLECO All Rights Reserved.</p>
+    <p>© 2026 PLECO All Rights Reserved.</p>
+    <p>Web design by KANØKO</p>
   </div>
 </footer>
 

@@ -15,6 +15,7 @@ main {
   text-decoration:none;
   color:var(--color-muted);
   transition:0.2s;
+  white-space: nowrap;
 }
 .news-category-btn:hover{
   background:var(--color-main);
@@ -96,7 +97,14 @@ main {
 /* ===============================
    Responsive
 ================================ */
-
+@media (max-width: 1024px){
+  .news-wrapper {
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:2rem;
+    padding: 0 5rem 10rem;
+  }
+}
 @media (max-width: 768px){
 
   .main {
@@ -112,6 +120,10 @@ main {
   .news-wrapper {
     grid-template-columns: 1fr;
     padding: 1.5rem;
+  }
+  .news-item {
+    max-width: 400px;
+    margin: 0 auto;
   }
 
 }

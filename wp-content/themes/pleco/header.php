@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/logo/ロゴ-グラデーション.png">
 
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
 
   <?php wp_head(); ?>
+
+  <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/images/logo/ロゴ-グラデーション-clipped.png?v=<?php echo filemtime(get_template_directory() . '/images/logo/ロゴ-グラデーション-clipped.png'); ?>">
 </head>
 
 <body <?php body_class(); ?>>
@@ -33,7 +34,6 @@
     </nav>
 
     <div class="header-cta">
-      <a class="btn btn-ghost" href="/price">料金プラン</a>
       <a class="btn" href="/contact">お問い合わせ</a>
     </div>
 

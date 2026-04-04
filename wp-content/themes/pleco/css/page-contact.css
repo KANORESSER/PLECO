@@ -5,7 +5,7 @@
   padding:2rem 0 6rem;
 }
 .cf7-table{
-  max-width: 900px;
+  max-width: 85%;
   margin:auto;
   background:white;
   padding:2.5rem;
@@ -19,6 +19,7 @@
   padding:1.125rem 0;
   border-bottom:0.0625rem solid #ddd;
   align-items:center;
+  gap: 1rem;
 }
 
 .cf7-label{
@@ -48,8 +49,9 @@
   min-height:8.75rem;
 }
 
-.tel-group input{
-  width:5rem;
+
+.tel-group input {
+  width: 5rem;
 }
 
 .checkbox-grid label{
@@ -79,6 +81,19 @@
   width:auto;
 }
 
+.wpcf7-acceptance {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+}
+.wpcf7-acceptance a {
+  text-decoration: underline;
+  color:inherit;
+}
+
 .cf7-submit{
   text-align:center;
   margin-top:2.5rem;
@@ -92,16 +107,15 @@
 
 
 @media (max-width: 768px) {
-  .cf7-table {
-    width: 95%;
-  }
-
   .cf7-row{
     grid-template-columns:1fr;
     gap:1rem;
   }
   .cf7-label p {
     margin: 0;
+  }
+  .tel-group input {
+    width: 4rem;
   }
 
 }

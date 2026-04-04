@@ -16,19 +16,20 @@ add_filter('pre_get_document_title', function($title) {
   return get_the_title() . ' | ' . get_bloginfo('name');
 });
 
-
 function pleco_enqueue() {
 
   /* CSS */
   wp_enqueue_style(
     'pleco-style',
-    get_stylesheet_uri()
+    get_stylesheet_uri(),
+    [],
+    filemtime(get_stylesheet_directory() . '/style.css')
   );
 
   $styles = [
     'variables',
     'base',
-    // 'overlay',
+    'overlay',
     'header',
     'hero',
     'about',
@@ -42,79 +43,140 @@ function pleco_enqueue() {
     'price',
     'news'
   ];
+
   foreach ($styles as $style) {
-    wp_enqueue_style(
-      "pleco-" . $style,
-      get_template_directory_uri() . "/css/{$style}.css",
-      [],
-      filemtime(get_template_directory() . "/css/{$style}.css")
-    );
+    $path = get_template_directory() . "/css/{$style}.css";
+
+    if (file_exists($path)) {
+      wp_enqueue_style(
+        "pleco-" . $style,
+        get_template_directory_uri() . "/css/{$style}.css",
+        [],
+        filemtime($path)
+      );
+    }
   }
 
   // 下層ページ
+  // about
   if (is_page('about')) {
-    wp_enqueue_style(
-      'page-about',
-      get_template_directory_uri() . '/css/page-about.css'
-    );
+    $path = get_template_directory() . '/css/page-about.css';
+    if (file_exists($path)) {
+      wp_enqueue_style(
+        'page-about',
+        get_template_directory_uri() . '/css/page-about.css',
+        [],
+        filemtime($path)
+      );
+    }
   }
-
-  if (is_page('startup-support')) {
-    wp_enqueue_style(
-      'page-startup-support',
-      get_template_directory_uri() . '/css/page-startup-support.css'
-    );
-  }
-
-  if (is_page('management')) {
-    wp_enqueue_style(
-      'page-management',
-      get_template_directory_uri() . '/css/page-management.css'
-    );
-  }
-
+  // price
   if (is_page('price')) {
-    wp_enqueue_style(
-      'page-price',
-      get_template_directory_uri() . '/css/page-price.css'
-    );
-  }
+    $path = get_template_directory() . '/css/page-price.css';
 
+    if (file_exists($path)) {
+      wp_enqueue_style(
+        'page-price',
+        get_template_directory_uri() . '/css/page-price.css',
+        [],
+        filemtime($path)
+      );
+    }
+  }
+  // management
+  if (is_page('management')) {
+    $path = get_template_directory() . '/css/page-management.css';
+    if (file_exists($path)) {
+      wp_enqueue_style(
+        'page-management',
+        get_template_directory_uri() . '/css/page-management.css',
+        [],
+        filemtime($path)
+      );
+    }
+  }
+  // startup-support
+  if (is_page('startup-support')) {
+    $path = get_template_directory() . '/css/page-startup-support.css';
+    if (file_exists($path)) {
+      wp_enqueue_style(
+        'page-startup-support',
+        get_template_directory_uri() . '/css/page-startup-support.css',
+        [],
+        filemtime($path)
+      );
+    }
+  }
+  // contact
   if (is_page('contact')) {
-    wp_enqueue_style(
-      'page-contact',
-      get_template_directory_uri() . '/css/page-contact.css'
-    );
+    $path = get_template_directory() . '/css/page-contact.css';
+    if (file_exists($path)) {
+      wp_enqueue_style(
+        'page-contact',
+        get_template_directory_uri() . '/css/page-contact.css',
+        [],
+        filemtime($path)
+      );
+    }
+  }
+  // privacy
+  if (is_page('privacy-policy')) {
+    $path = get_template_directory() . '/css/page-privacy-policy.css';
+    if (file_exists($path)) {
+      wp_enqueue_style(
+        'page-privacy-policy',
+        get_template_directory_uri() . '/css/page-privacy-policy.css',
+        [],
+        filemtime($path)
+      );
+    }
   }
 
-  if (is_home() || is_archive() || is_category()) {
+
+// archive
+if (is_home() || is_page('news') || is_category()) {
+
+  $path = get_template_directory() . '/css/home.css';
+
+  if (file_exists($path)) {
     wp_enqueue_style(
-      'archive',
-      get_template_directory_uri() . '/css/archive.css',
-      array(),
-      null
+      'home',
+      get_template_directory_uri() . '/css/home.css',
+      [],
+      filemtime($path)
     );
   }
+}
 
+  // single
   if (is_single()) {
-    wp_enqueue_style(
-      'single',
-      get_template_directory_uri() . '/css/single.css'
+
+    $path = get_template_directory() . '/css/single.css';
+
+    if (file_exists($path)) {
+      wp_enqueue_style(
+        'single',
+        get_template_directory_uri() . '/css/single.css',
+        [],
+        filemtime($path)
+      );
+    }
+  }
+
+  /* JS */
+  $js_path = get_template_directory() . '/js/script.js';
+  if (file_exists($js_path)) {
+    wp_enqueue_script(
+      'pleco-script',
+      get_template_directory_uri() . '/js/script.js',
+      [],
+      filemtime($js_path),
+      true
     );
   }
-  
-  /* JS */
-  wp_enqueue_script(
-    'pleco-script',
-    get_template_directory_uri() . '/js/script.js',
-    array(),
-    null,
-    true
-  );
 }
 
 add_action('wp_enqueue_scripts', 'pleco_enqueue');
-
 
 
 // h2・h3対応 目次自動生成

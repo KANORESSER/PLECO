@@ -2,7 +2,7 @@
 
 <main class="single">
 
-  <div class="section-header fade-up">
+  <div class="section-header">
     <div class="section-title">
       <span>NEWS</span>
       <h2>お知らせ</h2>
@@ -17,7 +17,7 @@
   <section class="single-contents">
 
     <!-- メイン記事 -->
-    <article class="single-article fade-in-up">
+    <article class="single-article">
 
       <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>

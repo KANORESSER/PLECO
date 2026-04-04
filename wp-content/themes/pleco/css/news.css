@@ -35,6 +35,9 @@
 .top-news .news-link:hover img{
   transform:scale(1.03);
 }
+.top-news .news-title:hover {
+  text-decoration: underline;
+}
 .top-news .news-text{
   margin-top:0.8rem;
   color: var(--color-muted);
@@ -75,12 +78,13 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .top-news .news-wrapper {
     display:flex;
     overflow-x:auto;
     gap:1.5rem;
     padding-bottom:1rem;
+    margin-bottom: 1.2rem;
   }
   .news-item {
     flex: 0 0 80%;

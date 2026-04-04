@@ -27,10 +27,11 @@
   margin-bottom: 3rem;
 }
 .price-card {
-  display:grid;
-  grid-template-rows: 8rem 10rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   background: rgba(255,255,255,0.7);
   border-radius:1.5rem;
+  box-shadow: 0 30px 30px rgba(0,0,0,0.08);
 }
 .plan-featured {
   box-shadow: 0 24px 24px rgba(0,190,255,0.2);
@@ -128,6 +129,7 @@
   display: flex;
   align-items: center;
   text-align: center;
+  justify-content: center;
   color: var(--color-muted);
 }
 
@@ -135,9 +137,10 @@
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .price-cards {
     grid-template-columns: 1fr;
+    gap: 2rem;
     margin-bottom: 1rem;
   }
   .plan-featured .price-card-header h3 {

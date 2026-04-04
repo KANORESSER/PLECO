@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main class="main logo-bg">
+<main class="main logo-bg fade-up">
 
   <section class="news-page">
     <div class="container">

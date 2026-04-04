@@ -1,71 +1,43 @@
 <?php get_header(); ?>
 
 <!-- Overlay -->
-<!-- <section id="overlay">
+<section id="overlay">
   <p class="overlay-text">
-    民泊運営をトータルサポート
+    民泊運営を<br class="sp-only">トータルサポート
   </p>
-</section> -->
+</section>
 
 <section id="main-content">
 
   <!-- main -->
   <main>
     <!-- hero -->
-    <section class="hero logo-bg">
-      <div class="hero-inner">
+    <section class="hero">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/logo/ロゴ-グラデーション-clipped.png" class="hero-bg-logo" alt="PLECOロゴ画像">
 
-        <div class="hero-left">
-          <div class="hero-left-content">
-            <p class="hero-eyebrow">Minpaku Management & Cleaning</p>
-            <h1 class="hero-title">
-              民泊運営をトータルサポート
-            </h1>
-            <p class="hero-lead">
-              京都を中心に関西エリアの民泊運営・清掃をワンストップで。<br>
-              品質の安定と手間の削減で、運営を支えます。
-            </p>
-
-            <!-- <div class="hero-stats">
-
-            <div class="hero-stat">
-              <p>
-                契約<br class="sp-only">継続率<br>
-                <span class="value two" data-target="90">0</span>%
-              </p>
-            </div>
-            <div class="hero-stat">
-              <p>
-                平均稼働率<br class="pc-only">
-                年間<br class="sp-only"><span class="value two" data-target="70">0</span>%
-              </p>
-            </div>
-            <div class="hero-stat">
-              <p>
-                京都を中心に<br>
-                <span class="value three" data-target="100">0</span><br class="sp-only">物件以上の<br>
-                管理・清掃実績
-              </p>
-            </div>
-          </div> -->
-
-            <div class="hero-actions">
-              <a class="btn btn-lg" href="/contact">無料相談する</a>
-              <a class="btn btn-ghost btn-lg" href="price.html">料金プラン</a>
-            </div>
-          </div>
-        </div>
-        <div class="hero-right">
-          <div class="main-visual-slides">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/hero/hero1.png" alt="京都民泊イメージ画像" class="main-visual-slide is-active">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/hero/hero2.png" alt="民泊開業イメージ画像" class="main-visual-slide">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/hero/hero3.png" alt="電話対応イメージ画像" class="main-visual-slide">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/hero/hero4.png" alt="ベッドメイキングイメージ画像" class="main-visual-slide">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/hero/hero5.png" alt="お風呂掃除イメージ画像" class="main-visual-slide">
-          </div>
-        </div>
-
+      <div class="hero-bg-picture">
+        <img src="<?php echo get_template_directory_uri(); ?>/images/hero1.png" alt="民泊画像">
       </div>
+
+      <div class="hero-left">
+        <div class="hero-left-inner">
+          <p class="hero-eyebrow">Minpaku Management & Cleaning</p>
+          <h1 class="hero-title">
+            民泊運営を<br>トータルサポート
+          </h1>
+          <p class="hero-lead">
+            集客・清掃・ゲスト対応まで一括サポート。<br>
+            安定した民泊運営を実現します。
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-lg" href="/contact">無料相談する</a>
+            <a class="btn btn-ghost btn-lg" href="/price">料金プラン</a>
+          </div>
+        </div>
+      </div>
+
+
     </section>
 
     <!-- about -->
@@ -84,7 +56,7 @@
           運営管理、現場オペレーション、清掃品質までを一貫して整えることで、<br>
           オーナー様とゲストの双方にとって安心できる宿泊環境を実現します。
         </p>
-        <a href="/about" class="btn btn-lg">会社紹介はこちら</a>
+        <a href="/about" class="btn btn-lg fade-up">会社紹介はこちら</a>
       </div>
     </section>
 
@@ -450,7 +422,7 @@
             <h2>民泊運営代行</h2>
           </div>
           <p>
-            <strong>宿泊予約サイトの運営、ゲスト対応、清掃・メンテナンス</strong>まで、民泊施設の運営をトータルサポートします。
+            <strong>宿泊予約サイトの運営、ゲスト対応、清掃・メンテナンス</strong>まで、<br>民泊施設の運営をトータルサポートします。
           </p>
         </div>
 
@@ -459,7 +431,7 @@
           <h3 class="underline-h3 fade-up">旅館業の許可取得済みの方</h3>
           <div class="licensed-flow-container fade-up">
 
-            <div class="licensed-flow-image pc-only">
+            <div class="licensed-flow-image over1024-only">
               <img src="<?php echo get_template_directory_uri(); ?>/images/management/licensed.png" alt="旅館業の許可取得済みの方 イメージ画像">
             </div>
 
@@ -498,12 +470,12 @@
 
         <!-- 新規に旅館業の許可を取得される方 -->
         <section class="opening-flow">
-          <h3 class="underline-h3 fade-up pc-only">新規に旅館業の許可を取得される方</h3>
+          <h3 class="underline-h3 fade-up over1024-only">新規に旅館業の許可を取得される方</h3>
           <h3 class="underline-h3 fade-up sp-only margin-bottom-0">新規に旅館業の許可を</h3>
           <h3 class="underline-h3 fade-up sp-only">取得される方</h3>
           <div class="opening-flow-container fade-up">
 
-            <div class="opening-flow-image pc-only">
+            <div class="opening-flow-image over1024-only">
               <img src="<?php echo get_template_directory_uri(); ?>/images/management/opening.png" alt="新規に旅館業の許可を取得される方 イメージ画像">
             </div>
 
